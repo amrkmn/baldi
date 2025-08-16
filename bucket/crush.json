@@ -40,7 +40,7 @@
             }
         },
         "hash": {
-            "url": "$url.sha256"
+            "url": "$baseurl/checksums.txt"
         }
     }
 }
