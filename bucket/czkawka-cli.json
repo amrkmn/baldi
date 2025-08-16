@@ -1,0 +1,26 @@
+{
+    "version": "9.0.0",
+    "description": "Multi functional app to find duplicates, empty folders, similar images etc.",
+    "homepage": "https://github.com/qarmin/czkawka",
+    "license": "MIT, CC-BY-4.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/qarmin/czkawka/releases/download/9.0.0/windows_czkawka_cli.exe#/czkawka.exe",
+            "hash": "a44869b8bb58854d0383558d1c7b50d0a306bd05f13164e62417aafbb33ccbc2"
+        }
+    },
+    "bin": "czkawka.exe",
+    "checkver": {
+        "github": "https://github.com/qarmin/czkawka"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/qarmin/czkawka/releases/download/$version/windows_czkawka_cli.exe"
+            }
+        },
+        "hash": {
+            "url": "$url.sha256"
+        }
+    }
+}
