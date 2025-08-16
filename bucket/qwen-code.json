@@ -11,7 +11,7 @@
         [
             "node",
             "qwen",
-            "dist/index.js"
+            "$dir/dist/index.js"
         ]
     ],
     "post_install": [
