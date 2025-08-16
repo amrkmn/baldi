@@ -9,7 +9,7 @@
     "depends": "main/nodejs-lts",
     "bin": [
         [
-            "dist/index.js",
+            "node dist/index.js",
             "qwen"
         ]
     ],
