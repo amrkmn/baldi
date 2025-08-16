@@ -6,7 +6,7 @@
     "url": "https://registry.npmjs.org/@qwen-code/qwen-code/-/qwen-code-0.0.7.tgz",
     "hash": "sha512:cd177b5e556289a6d0cb8aa3d0e7dfa14056774aa2b42c81730193fbe88675e7375d5caaba2b7c009abd04e89e72d35a60cfe31d9f315e2f3b617b4a31cc9e90",
     "extract_dir": "package",
-    "depends": "main/nodejs-lts",
+    "depends": "main/bun",
     "bin": [
         [
             "dist/index.js",
@@ -15,7 +15,7 @@
     ],
     "post_install": [
         "Push-Location \"$dir\"",
-        "npm install --production --silent",
+        "bun install --production",
         "Pop-Location"
     ],
     "checkver": {
