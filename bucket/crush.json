@@ -1,0 +1,54 @@
+{
+    "version": "0.6.2",
+    "description": "The glamourous AI coding agent for your favourite terminal",
+    "homepage": "https://charm.sh/crush",
+    "license": "FSL-1.1-MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/charmbracelet/crush/releases/download/v0.6.2/crush_0.6.2_Windows_x86_64.zip",
+            "hash": "dc9ddb2801ec5cece795f853ba9f09234e3d085a34b771ec7b5cb45b4cdd9c91"
+        },
+        "32bit": {
+            "url": "https://github.com/charmbracelet/crush/releases/download/v0.6.2/crush_0.6.2_Windows_i386.zip",
+            "hash": "441806be43c1d4a4999964a2b46cd29755306ae0210a69b169b3f6932836b20d"
+        },
+        "arm64": {
+            "url": "https://github.com/charmbracelet/crush/releases/download/v0.6.2/crush_0.6.2_Windows_arm64.zip",
+            "hash": "5d13a292e03c847d7051755d7ef4bab1276ccf0675858e3d168c6b15d84c884e"
+        }
+    },
+    "bin": "crush.exe",
+    "persist": [
+        "crush.json",
+        "providers.json"
+    ],
+    "post_install": [
+        "$appdata = Join-Path $env:LOCALAPPDATA 'crush'",
+        "if (!(Test-Path $appdata)) { New-Item -ItemType Directory -Path $appdata | Out-Null }",
+        "foreach ($file in @('crush.json','providers.json')) {",
+        "    $src = Join-Path $persist_dir $file",
+        "    $dest = Join-Path $appdata $file",
+        "    if (Test-Path $dest) { Remove-Item $dest -Force }",
+        "    if (Test-Path $src) { New-Item -ItemType HardLink -Path $dest -Target $src | Out-Null }",
+        "}"
+    ],
+    "checkver": {
+        "github": "https://github.com/charmbracelet/crush"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/charmbracelet/crush/releases/download/v$version/crush_$version_Windows_x86_64.zip"
+            },
+            "32bit": {
+                "url": "https://github.com/charmbracelet/crush/releases/download/v$version/crush_$version_Windows_i386.zip"
+            },
+            "arm64": {
+                "url": "https://github.com/charmbracelet/crush/releases/download/v$version/crush_$version_Windows_arm64.zip"
+            }
+        },
+        "hash": {
+            "url": "$url.sha256"
+        }
+    }
+}
