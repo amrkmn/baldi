@@ -9,8 +9,9 @@
     "depends": "main/nodejs-lts",
     "bin": [
         [
-            "node dist/index.js",
-            "qwen"
+            "dist/index.js",
+            "qwen",
+            "node"
         ]
     ],
     "post_install": [

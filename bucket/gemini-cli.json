@@ -9,8 +9,9 @@
     "depends": "main/nodejs-lts",
     "bin": [
         [
-            "node dist/index.js",
-            "gemini"
+            "dist/index.js",
+            "gemini",
+            "node"
         ]
     ],
     "post_install": [
