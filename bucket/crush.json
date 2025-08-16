@@ -21,49 +21,22 @@
         }
     },
     "bin": "crush.exe",
-    "persist": [
-        "crush.json",
-        "providers.json"
-    ],
-    "pre_install": [
-        "foreach ($file in @('crush.json','providers.json')) {",
-        "    $persistFile = Join-Path $persist_dir $file",
-        "    if (!(Test-Path $persistFile -PathType Leaf)) {",
-        "        if (Test-Path $persistFile -PathType Container) { Remove-Item $persistFile -Recurse -Force }",
-        "        New-Item -ItemType File -Path $persistFile | Out-Null",
-        "    }",
-        "}"
-    ],
-    "post_install": [
-        "$appdata = Join-Path $env:LOCALAPPDATA 'crush'",
-        "if (!(Test-Path $appdata)) { New-Item -ItemType Directory -Path $appdata | Out-Null }",
-        "foreach ($file in @('crush.json','providers.json')) {",
-        "    $src = Join-Path $persist_dir $file",
-        "    $dest = Join-Path $appdata $file",
-        "    if (Test-Path $dest) { Remove-Item $dest -Force }",
-        "    if (Test-Path $src) { New-Item -ItemType HardLink -Path $dest -Target $src | Out-Null }",
-        "}"
-    ],
-    "pre_uninstall": [
-        "$appdata = Join-Path $env:LOCALAPPDATA 'crush'",
-        "foreach ($file in @('crush.json','providers.json')) {",
-        "    $dest = Join-Path $appdata $file",
-        "    if (Test-Path $dest) { Remove-Item $dest -Force }",
-        "}"
-    ],
     "checkver": {
         "github": "https://github.com/charmbracelet/crush"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/charmbracelet/crush/releases/download/v$version/crush_$version_Windows_x86_64.zip"
+                "url": "https://github.com/charmbracelet/crush/releases/download/v$version/crush_$version_Windows_x86_64.zip",
+                "extract_dir": "crush_$version_Windows_x86_64"
             },
             "32bit": {
-                "url": "https://github.com/charmbracelet/crush/releases/download/v$version/crush_$version_Windows_i386.zip"
+                "url": "https://github.com/charmbracelet/crush/releases/download/v$version/crush_$version_Windows_i386.zip",
+                "extract_dir": "crush_$version_Windows_i386"
             },
             "arm64": {
-                "url": "https://github.com/charmbracelet/crush/releases/download/v$version/crush_$version_Windows_arm64.zip"
+                "url": "https://github.com/charmbracelet/crush/releases/download/v$version/crush_$version_Windows_arm64.zip",
+                "extract_dir": "crush_$version_Windows_arm64"
             }
         },
         "hash": {
