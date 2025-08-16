@@ -25,6 +25,15 @@
         "crush.json",
         "providers.json"
     ],
+    "pre_install": [
+        "foreach ($file in @('crush.json','providers.json')) {",
+        "    $persistFile = Join-Path $persist_dir $file",
+        "    if (!(Test-Path $persistFile -PathType Leaf)) {",
+        "        if (Test-Path $persistFile -PathType Container) { Remove-Item $persistFile -Recurse -Force }",
+        "        New-Item -ItemType File -Path $persistFile | Out-Null",
+        "    }",
+        "}"
+    ],
     "post_install": [
         "$appdata = Join-Path $env:LOCALAPPDATA 'crush'",
         "if (!(Test-Path $appdata)) { New-Item -ItemType Directory -Path $appdata | Out-Null }",
