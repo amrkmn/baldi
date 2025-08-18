@@ -1,6 +1,6 @@
 {
     "version": "9.0.0",
-    "description": "Multi functional app to find duplicates, empty folders, similar images etc.",
+    "description": "Multi functional app to find duplicates, empty folders, similar images etc",
     "homepage": "https://github.com/qarmin/czkawka",
     "license": "MIT, CC-BY-4.0",
     "architecture": {
