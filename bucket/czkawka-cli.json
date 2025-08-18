@@ -10,9 +10,7 @@
         }
     },
     "bin": "czkawka.exe",
-    "checkver": {
-        "github": "https://github.com/qarmin/czkawka"
-    },
+    "checkver": "github",
     "autoupdate": {
         "architecture": {
             "64bit": {
