@@ -16,7 +16,8 @@
     ],
     "post_install": [
         "Push-Location \"$dir\"",
-        "npm install --omit=dev --silent",
+        "npm pack --ignore-scripts",
+        "npm install --global --build-from-source --cache=\"$env:SCOOP_CACHE\\npm_cache\" --prefix=\"$dir\" \"*.tgz\"",
         "Pop-Location"
     ],
     "checkver": {
