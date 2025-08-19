@@ -6,17 +6,17 @@
     "url": "https://registry.npmjs.org/@google/gemini-cli/-/gemini-cli-0.1.22.tgz",
     "hash": "sha512:823c29bcaca40f10fd897314b2864cee36372df0a8e9ff38ea007d4fbed584369b7367691523e250dd68fe01787baebefcb03270aebabfe0c4af7e6a4b80c7bb",
     "extract_dir": "package",
-    "depends": "main/bun",
+    "depends": "main/nodejs-lts",
     "bin": [
         [
-            "bun",
+            "node",
             "gemini",
             "$dir/dist/index.js"
         ]
     ],
     "post_install": [
         "Push-Location \"$dir\"",
-        "bun install --production --silent",
+        "npm install --omit=dev --silent",
         "Pop-Location"
     ],
     "checkver": {
