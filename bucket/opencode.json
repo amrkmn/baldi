@@ -10,6 +10,12 @@
         }
     },
     "bin": "opencode.exe",
+    "pre_install": [
+        "if (!(Test-Path \"$persist_dir\\opencode.json\")) {",
+        "    Write-Host 'Creating default opencode.json config file' -f Yellow",
+        "    New-Item \"$persist_dir\\opencode.json\" -Type File -Force | Out-Null",
+        "}"
+    ],
     "persist": [
         "opencode.json"
     ],
