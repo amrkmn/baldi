@@ -14,9 +14,7 @@
             "$dir\\dist\\index.js"
         ]
     ],
-    "post_install": [
-        "npm install --prefix=$dir --omit=dev --silent"
-    ],
+    "post_install": "npm install --prefix=$dir --omit=dev --silent",
     "checkver": {
         "url": "https://registry.npmjs.org/@qwen-code/qwen-code/latest",
         "jsonpath": "$.version"

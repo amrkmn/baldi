@@ -16,9 +16,7 @@
         "    New-Item \"$persist_dir\\opencode.json\" -Type File -Force | Out-Null",
         "}"
     ],
-    "persist": [
-        "opencode.json"
-    ],
+    "persist": "opencode.json",
     "env_set": {
         "OPENCODE_CONFIG": "$dir\\opencode.json"
     },
