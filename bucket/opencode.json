@@ -10,12 +10,10 @@
         }
     },
     "bin": "opencode.exe",
-    "shortcuts": [
-        [
-            "opencode.exe",
-            "OpenCode"
-        ]
-    ],
+    "persist": "opencode.json",
+    "env_set": {
+        "OPENCODE_CONFIG": "$dir\\opencode.json"
+    },
     "checkver": {
         "github": "https://github.com/sst/opencode"
     },
