@@ -11,13 +11,11 @@
         [
             "node",
             "gemini",
-            "$dir/dist/index.js"
+            "$dir\\dist\\index.js"
         ]
     ],
     "post_install": [
-        "Push-Location \"$dir\"",
-        "npm install --global --prefix=. --omit=dev --silent",
-        "Pop-Location"
+        "npm install --prefix=$dir --omit=dev --silent"
     ],
     "checkver": {
         "url": "https://registry.npmjs.org/@google/gemini-cli/latest",
