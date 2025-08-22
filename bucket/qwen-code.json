@@ -11,13 +11,11 @@
         [
             "node",
             "qwen",
-            "$dir/dist/index.js"
+            "$dir\\dist\\index.js"
         ]
     ],
     "post_install": [
-        "Push-Location \"$dir\"",
-        "npm install --omit=dev --silent",
-        "Pop-Location"
+        "npm install --prefix=$dir --omit=dev --silent"
     ],
     "checkver": {
         "url": "https://registry.npmjs.org/@qwen-code/qwen-code/latest",
