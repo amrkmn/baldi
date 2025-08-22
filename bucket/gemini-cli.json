@@ -16,7 +16,7 @@
     ],
     "post_install": [
         "Push-Location \"$dir\"",
-        "npm install --omit=dev --silent",
+        "npm install --global --prefix=$dir --omit=dev --silent",
         "Pop-Location"
     ],
     "checkver": {
