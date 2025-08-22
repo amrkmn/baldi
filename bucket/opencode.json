@@ -10,17 +10,11 @@
         }
     },
     "bin": "opencode.exe",
-    "pre_install": [
-        "if (!(Test-Path \"$dir\\opencode.json\")) {",
-        "    Write-Host 'Creating default opencode.json config file' -f Yellow",
-        "    New-Item \"$dir\\opencode.json\" -Type File -Force | Out-Null",
-        "}"
-    ],
     "persist": [
-        "opencode.json"
+        "config"
     ],
     "env_set": {
-        "OPENCODE_CONFIG": "$dir\\opencode.json"
+        "OPENCODE_CONFIG": "$dir\\config\\opencode.json"
     },
     "checkver": {
         "github": "https://github.com/sst/opencode"
