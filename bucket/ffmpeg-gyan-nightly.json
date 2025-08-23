@@ -20,8 +20,8 @@
         "bin\\ffprobe.exe"
     ],
     "checkver": {
-        "url": "https://api.github.com/repositories/306803927/releases",
-        "regex": "tag/([\\d-]+)-git-(?<commit>[a-z\\d]+)"
+        "url": "https://www.gyan.dev/ffmpeg/builds/ffmpeg-git-full.7z.ver",
+        "regex": "([\\d-]+)-git-(?<commit>[a-z\\d]+)"
     },
     "autoupdate": {
         "architecture": {
