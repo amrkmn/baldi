@@ -17,8 +17,8 @@
         "bin\\ffprobe.exe"
     ],
     "checkver": {
-        "url": "https://www.gyan.dev/ffmpeg/builds/ffmpeg-release-full.7z.ver",
-        "regex": "([\\d.]+)"
+        "url": "https://api.github.com/repositories/306803927/releases",
+        "regex": "tag/([\\d.]+)"
     },
     "autoupdate": {
         "architecture": {

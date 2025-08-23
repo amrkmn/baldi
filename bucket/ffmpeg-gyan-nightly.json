@@ -1,20 +1,19 @@
 {
-    "version": "8.0",
+    "version": "2025-08-20",
     "description": "A complete, cross-platform solution to record, convert and stream audio and video.",
     "homepage": "https://ffmpeg.org",
     "license": "GPL-3.0-or-later",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/GyanD/codexffmpeg/releases/download/8.0/ffmpeg-8.0-full_build-shared.7z",
-            "hash": "3413a6326c7aff1660af6e3ef2fadd6e5fed29ea267ccf67698bc5c055c0a0c3",
-            "extract_dir": "ffmpeg-8.0-full_build-shared"
+            "url": "https://github.com/GyanD/codexffmpeg/releases/download/2025-08-20-git-4d7c609be3/ffmpeg-2025-08-20-git-4d7c609be3-full_build.7z",
+            "hash": "1f45dec051a5c850d413dae18981355134057f3306f43555080bedb5b956287b",
+            "extract_dir": "ffmpeg-2025-08-20-git-4d7c609be3-full_build"
         }
     },
     "post_install": [
         "# Workaround for https://github.com/ScoopInstaller/Main/issues/2611",
         "Remove-Item \"$scoopdir\\shims\\ffmpeg.ps1\", \"$scoopdir\\shims\\ffplay.ps1\", \"$scoopdir\\shims\\ffprobe.ps1\" -ErrorAction SilentlyContinue"
     ],
-    "persist": "fonts",
     "bin": [
         "bin\\ffmpeg.exe",
         "bin\\ffplay.exe",
@@ -22,13 +21,13 @@
     ],
     "checkver": {
         "url": "https://api.github.com/repositories/306803927/releases",
-        "regex": "tag/([\\d.]+)"
+        "regex": "tag/([\\d-]+)-git-(?<commit>[a-z\\d]+)"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/GyanD/codexffmpeg/releases/download/$version/ffmpeg-$version-full_build-shared.7z",
-                "extract_dir": "ffmpeg-$version-full_build-shared"
+                "url": "https://github.com/GyanD/codexffmpeg/releases/download/$version-git-$matchCommit/ffmpeg-$version-git-$matchCommit-full_build.7z",
+                "extract_dir": "ffmpeg-$version-git-$matchCommit-full_build"
             }
         }
     }
