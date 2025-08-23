@@ -21,7 +21,8 @@
         "bin\\ffprobe.exe"
     ],
     "checkver": {
-        "github": "https://github.com/GyanD/codexffmpeg"
+        "url": "https://www.gyan.dev/ffmpeg/builds/ffmpeg-release-full-shared.7z.ver",
+        "regex": "([\\d.]+)"
     },
     "autoupdate": {
         "architecture": {
