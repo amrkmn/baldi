@@ -15,8 +15,9 @@
         ]
     ],
     "post_install": [
-        "echo \"$dir\"",
-        "npm install --prefix=$dir --omit=dev --silent"
+        "Push-Location $dir",
+        "npm install --omit=dev --silent",
+        "Pop-Location"
     ],
     "checkver": {
         "url": "https://registry.npmjs.org/@qwen-code/qwen-code/latest",

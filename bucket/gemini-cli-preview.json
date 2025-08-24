@@ -14,7 +14,11 @@
             "$dir\\dist\\index.js"
         ]
     ],
-    "post_install": "npm install --prefix=$dir --omit=dev --silent",
+    "post_install": [
+        "Push-Location $dir",
+        "npm install --omit=dev --silent",
+        "Pop-Location"
+    ],
     "checkver": {
         "url": "https://registry.npmjs.org/@google/gemini-cli/preview",
         "jsonpath": "$.version"
