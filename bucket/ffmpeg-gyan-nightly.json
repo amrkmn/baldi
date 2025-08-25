@@ -21,13 +21,13 @@
     ],
     "checkver": {
         "url": "https://www.gyan.dev/ffmpeg/builds/ffmpeg-git-full.7z.ver",
-        "regex": "([\\d-]+)-git-(?<commit>[a-z\\d]+)"
+        "regex": "([\\d-]+-git-[a-z\\d]+)"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/GyanD/codexffmpeg/releases/download/$version-git-$matchCommit/ffmpeg-$version-git-$matchCommit-full_build.7z",
-                "extract_dir": "ffmpeg-$version-git-$matchCommit-full_build"
+                "url": "https://github.com/GyanD/codexffmpeg/releases/download/$version/ffmpeg-$version-full_build.7z",
+                "extract_dir": "ffmpeg-$version-full_build"
             }
         }
     }
