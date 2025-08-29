@@ -15,6 +15,10 @@
             "codex"
         ]
     ],
+    "env_set": {
+        "CODEX_HOME": "$dir\\data"
+    },
+    "persist": "data",
     "checkver": {
         "github": "https://github.com/openai/codex",
         "regex": "rust-v([\\d.]+)"
