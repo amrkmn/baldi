@@ -1,10 +1,10 @@
 {
-    "version": "0.0.11-nightly.0",
+    "version": "0.0.11-nightly.1",
     "description": "Qwen Code is a coding agent that lives in digital world",
     "homepage": "https://github.com/QwenLM/qwen-code",
     "license": "Apache-2.0",
-    "url": "https://registry.npmjs.org/@qwen-code/qwen-code/-/qwen-code-0.0.11-nightly.0.tgz",
-    "hash": "sha512:4f2199eb6869a61aba3c2ab12541712ccfe961024d0bfa64a89fe8bafbcd30e925e4c31b27949f870b1a5e2226a67e797989c2a4fb9228c99a42e800c87c28be",
+    "url": "https://registry.npmjs.org/@qwen-code/qwen-code/-/qwen-code-0.0.11-nightly.1.tgz",
+    "hash": "sha512:e478161080968a9f013a4d7a1d9f1f1862a417dda93e2da8d2ef4d1dd94e550e89eb4d4d34271f5197e337db2281668dd7e28021c62e5dee557058034cfe5e9d",
     "extract_dir": "package",
     "depends": "main/nodejs-lts",
     "bin": [
