@@ -1,0 +1,13 @@
+{
+    "version": "1.0.4",
+    "description": "Command line utilities for Simple Voice Chat.",
+    "homepage": "https://github.com/henkelmax/svc-cli-utils",
+    "license": "Freeware",
+    "url": "https://github.com/henkelmax/svc-cli-utils/releases/download/1.0.4/svc-windows-x86-64.zip",
+    "hash": "064f8ca6a216ddc03c0ac83860dea167f38c2aa3cde0a8ebf5d28a6efdfff52d",
+    "bin": "svc.exe",
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/henkelmax/svc-cli-utils/releases/download/$version/svc-windows-x86-64.zip"
+    }
+}
