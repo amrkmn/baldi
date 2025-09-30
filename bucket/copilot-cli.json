@@ -3,7 +3,7 @@
     "description": "GitHub Copilot CLI brings the power of Copilot coding agent directly to your terminal",
     "homepage": "https://github.com/github/copilot-cli",
     "license": {
-        "identifier": "Freeware",
+        "identifier": "Proprietary",
         "url": "https://docs.github.com/en/site-policy/github-terms/github-pre-release-license-terms"
     },
     "url": "https://registry.npmjs.org/@github/copilot/-/copilot-0.0.330.tgz",
