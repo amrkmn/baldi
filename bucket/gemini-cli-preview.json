@@ -1,10 +1,10 @@
 {
-    "version": "0.8.0-preview.1",
+    "version": "0.9.0-preview.0",
     "description": "An open-source AI agent that brings the power of Gemini directly into your terminal (Preview)",
     "homepage": "https://google-gemini.github.io/gemini-cli/",
     "license": "Apache-2.0",
-    "url": "https://registry.npmjs.org/@google/gemini-cli/-/gemini-cli-0.8.0-preview.1.tgz",
-    "hash": "sha512:e36261162e8faeb41fb10d04146ef077de889b65bcd67350bda14e365985c74cfb293c242de93b6d44b3a0ee0371d4b3aff917b5e49b903ef928191c42565404",
+    "url": "https://registry.npmjs.org/@google/gemini-cli/-/gemini-cli-0.9.0-preview.0.tgz",
+    "hash": "sha512:3692a13205c01bcc754fc8687de82e5f8c2385be78c7b198a85b4e5d7cc723078830175ac12ecffc750e4b8212b44ab5affe214ee713304e40636a84c798430d",
     "extract_dir": "package",
     "depends": "main/nodejs-lts",
     "bin": [
