@@ -5,16 +5,15 @@
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/openai/codex/releases/download/rust-v0.47.0/codex-x86_64-pc-windows-msvc.exe.zst",
+            "url": "https://github.com/openai/codex/releases/download/rust-v0.47.0/codex-x86_64-pc-windows-msvc.exe.zst#/codex.exe.zst",
             "hash": "766843c4bab03ef9b2593660ab981d25f0826efb8c2499c5513a4aeaa085322e"
+        },
+        "arm64": {
+            "url": "https://github.com/openai/codex/releases/download/rust-v0.47.0/codex-aarch64-pc-windows-msvc.exe.zst#/codex.exe.zst",
+            "hash": "dcd2720561578dec8d1aa754f5a4b066d36826aadbd602441f511e47e2f723e5"
         }
     },
-    "bin": [
-        [
-            "codex-x86_64-pc-windows-msvc.exe",
-            "codex"
-        ]
-    ],
+    "bin": "codex.exe",
     "env_set": {
         "CODEX_HOME": "$dir\\data"
     },
@@ -26,7 +25,10 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/openai/codex/releases/download/rust-v$version/codex-x86_64-pc-windows-msvc.exe.zst"
+                "url": "https://github.com/openai/codex/releases/download/rust-v$version/codex-x86_64-pc-windows-msvc.exe.zst#/codex.exe.zst"
+            },
+            "arm64": {
+                "url": "https://github.com/openai/codex/releases/download/rust-v$version/codex-aarch64-pc-windows-msvc.exe.zst#/codex.exe.zst"
             }
         }
     }
