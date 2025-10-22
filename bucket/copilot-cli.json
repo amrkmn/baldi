@@ -1,13 +1,13 @@
 {
-    "version": "0.0.347",
+    "version": "0.0.348",
     "description": "GitHub Copilot CLI brings the power of Copilot coding agent directly to your terminal",
     "homepage": "https://github.com/github/copilot-cli",
     "license": {
         "identifier": "Proprietary",
         "url": "https://docs.github.com/en/site-policy/github-terms/github-pre-release-license-terms"
     },
-    "url": "https://registry.npmjs.org/@github/copilot/-/copilot-0.0.347.tgz",
-    "hash": "sha512:10ab31c9be8780baba01166623bd5b2ba6befc9ee010abcf48ce38805c13d2cb343a2cbc4d428d8e824c8fa547c4687599f45c869eccbcb72df670182e5c9a2d",
+    "url": "https://registry.npmjs.org/@github/copilot/-/copilot-0.0.348.tgz",
+    "hash": "sha512:80c4ae3bf598eb999026ff671048c70db942875082d90fa2a1880e4243374ae85d3ca725320e4a5c42f504c3d0bb8543bfde0af11d925f5589503f76f638edd4",
     "extract_dir": "package",
     "depends": "main/nodejs-lts",
     "bin": [
