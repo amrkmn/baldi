@@ -1,5 +1,5 @@
 {
-    "version": "2025.10.27.232152",
+    "version": "2025.10.28.151733",
     "description": "yt-dlp master builds",
     "homepage": "https://github.com/yt-dlp/yt-dlp-master-builds",
     "license": "Unlicense",
@@ -8,12 +8,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/yt-dlp/yt-dlp-master-builds/releases/download/2025.10.27.232152/yt-dlp.exe",
-            "hash": "8d3a4d432681707e884d8525e05e7b62237fc711bbaf31bbc1c37dfc527c1355"
+            "url": "https://github.com/yt-dlp/yt-dlp-master-builds/releases/download/2025.10.28.151733/yt-dlp.exe",
+            "hash": "a3c73cfcc81148297a961fbfc16d6af35f497ceb84ff0af5eeb8ec80dc19bb18"
         },
         "32bit": {
-            "url": "https://github.com/yt-dlp/yt-dlp-master-builds/releases/download/2025.10.27.232152/yt-dlp_x86.exe#/yt-dlp.exe",
-            "hash": "ace162bd3e0e35d9064444143fab229389ecf949aa6115cd614fdc7ccb18fec1"
+            "url": "https://github.com/yt-dlp/yt-dlp-master-builds/releases/download/2025.10.28.151733/yt-dlp_x86.exe#/yt-dlp.exe",
+            "hash": "28c0e724233d5d216554084356df56898c71e213fbd379749e6c45c7ee34d662"
         }
     },
     "bin": "yt-dlp.exe",
