@@ -1,0 +1,26 @@
+{
+    "version": "3.4.40.2",
+    "description": "ATLauncher is a Launcher for Minecraft which integrates multiple different ModPacks to allow you to download and install ModPacks easily and quickly.",
+    "homepage": "https://atlauncher.com/",
+    "license": "GPL-3.0-only",
+    "url": "https://github.com/ATLauncher/ATLauncher/releases/download/v3.4.40.2/ATLauncher-3.4.40.2.exe#ATLauncher.exe",
+    "bin": "ATLauncher.exe",
+    "shortcuts": [
+        [
+            "ATLauncher.exe",
+            "ATLauncher"
+        ]
+    ],
+    "persist": [
+        "configs",
+        "instances",
+        "servers",
+        "backups"
+    ],
+    "checkver": {
+        "github": "https://github.com/ATLauncher/ATLauncher"
+    },
+    "autoupdate": {
+        "url": "https://github.com/ATLauncher/ATLauncher/releases/download/v$version/ATLauncher-$version.exe#ATLauncher.exe"
+    }
+}
