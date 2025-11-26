@@ -38,6 +38,16 @@
             "x"
         ]
     ],
+    "persist": [
+        "bin",
+        "install"
+    ],
+    "env_add_path": [
+        "bin"
+    ],
+    "env_set": {
+        "BUN_INSTALL": "$dir"
+    },
     "checkver": {
         "github": "https://github.com/oven-sh/bun",
         "re": "bun-v([\\d.]+)"
