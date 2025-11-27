@@ -1,10 +1,10 @@
 {
-    "version": "0.1.0",
+    "version": "0.2.0",
     "description": "Scoop With Bun (swb): A JavaScript implementation of Scoop using Bun's runtime",
     "homepage": "https://github.com/amrkmn/swb",
     "license": "MIT",
-    "url": "https://registry.npmjs.org/@amrkmn/swb/-/swb-0.1.0.tgz",
-    "hash": "sha512:6133c95e7d9dc2aa2c441dbd4ebef533a42504ea5363eb3ea3ea8b1b52662ad6c37b67fc1f6fb5b1c2c3ee78e9098dd1cb576fd5f1ef74d99af72fc081ab4c80",
+    "url": "https://registry.npmjs.org/@amrkmn/swb/-/swb-0.2.0.tgz",
+    "hash": "sha512:521fece8c9997d99a12e94f2036f126d96f50637adc871cf19743d2ca6b675f430e0b106bfa759735128aa6304055f9686471226f3c7281e6c70104dcb7d6673",
     "extract_dir": "package",
     "depends": "main/bun",
     "bin": [
