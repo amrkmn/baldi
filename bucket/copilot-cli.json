@@ -1,36 +1,33 @@
 {
     "version": "0.0.369",
     "description": "GitHub Copilot CLI brings the power of Copilot coding agent directly to your terminal",
-    "homepage": "https://github.com/github/copilot-cli",
+    "homepage": "https://docs.github.com/en/copilot/concepts/agents/about-copilot-cli",
     "license": {
         "identifier": "Proprietary",
         "url": "https://docs.github.com/en/site-policy/github-terms/github-pre-release-license-terms"
     },
-    "url": "https://registry.npmjs.org/@github/copilot/-/copilot-0.0.369.tgz",
-    "hash": "sha512:b888f3153632452a2a97ff0ba99094202395db8badcad9519d8baee0bb04cd1212a31f4503b3067ee32671566b7eebd98380bb813fe8f08966eeb3480977fb0c",
-    "extract_dir": "package",
-    "depends": "main/nodejs-lts",
-    "bin": [
-        [
-            "node",
-            "copilot",
-            "$dir\\index.js"
-        ]
-    ],
-    "post_install": [
-        "Push-Location $dir",
-        "npm install --omit=dev --silent",
-        "Pop-Location"
-    ],
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/github/copilot-cli/releases/download/v0.0.369/copilot-win32-x64.zip",
+            "hash": "c7537c61c0b91406e8ce9448dcc5d578239a72b8dcb6757cb62ce95fc7b81ec9"
+        },
+        "arm64": {
+            "url": "https://github.com/github/copilot-cli/releases/download/v0.0.369/copilot-win32-arm64.zip",
+            "hash": "da7c7397cdd84d5ebea4fc71c97923114e5f2865e2e3dfaa320b27f15eb46115"
+        }
+    },
+    "bin": "copilot.exe",
     "checkver": {
-        "url": "https://registry.npmjs.org/@github/copilot/latest",
-        "jsonpath": "$.version"
+        "github": "https://github.com/github/copilot-cli"
     },
     "autoupdate": {
-        "url": "https://registry.npmjs.org/@github/copilot/-/copilot-$version.tgz",
-        "hash": {
-            "url": "https://registry.npmjs.org/@github/copilot/$version",
-            "regex": "sha512-([A-Za-z0-9+/=]+)"
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/github/copilot-cli/releases/download/v$version/copilot-win32-x64.zip"
+            },
+            "arm64": {
+                "url": "https://github.com/github/copilot-cli/releases/download/v$version/copilot-win32-arm64.zip"
+            }
         }
     }
 }
