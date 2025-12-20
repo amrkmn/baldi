@@ -1,5 +1,5 @@
 {
-    "version": "2.0.73",
+    "version": "2.0.74",
     "description": "Terminal-based AI coding assistant",
     "homepage": "https://www.anthropic.com/claude-code",
     "license": {
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.0.73/win32-x64/claude.exe",
-            "hash": "08e8ecfe26d866896a5fd455f7ea6cc205d89012b7f4cf77c781e459e7326591"
+            "url": "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.0.74/win32-x64/claude.exe",
+            "hash": "6bb40f53219b0124171f08ef84351e880643ccc31a1337e7e9d963b4841275c4"
         }
     },
     "bin": "claude.exe",
