@@ -1,10 +1,10 @@
 {
-    "version": "0.21.0-nightly.20251219.70696e364",
+    "version": "0.21.0-nightly.20251220.41a1a3eed",
     "description": "An open-source AI agent that brings the power of Gemini directly into your terminal (Nightly)",
     "homepage": "https://google-gemini.github.io/gemini-cli/",
     "license": "Apache-2.0",
-    "url": "https://registry.npmjs.org/@google/gemini-cli/-/gemini-cli-0.21.0-nightly.20251219.70696e364.tgz",
-    "hash": "sha512:893f5d6aace3a1fcc6f2ef8db095fb0135ac42c44771f72bd6a6d98a93d9e4fbb293028459ca78938633e064aa471049e4b9aea455cf1f4aa8eb74c377490403",
+    "url": "https://registry.npmjs.org/@google/gemini-cli/-/gemini-cli-0.21.0-nightly.20251220.41a1a3eed.tgz",
+    "hash": "sha512:ac31d55a8e0d98f302415084ca35e089443b70e8ee3999eb43a47bbe6d851f368bcbe66bf0fd76db1d8f07847c047aab45117eba6c74ce264ad9248ebe7d84f6",
     "extract_dir": "package",
     "depends": "main/nodejs-lts",
     "bin": [
