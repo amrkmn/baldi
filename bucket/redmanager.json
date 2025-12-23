@@ -1,0 +1,19 @@
+{
+    "version": "1.1.10",
+    "description": "Installer and mod manager for the RedLoader.",
+    "homepage": "https://github.com/ToniMacaroni/RedManager",
+    "license": "GPL-3.0-only",
+    "url": "https://github.com/ToniMacaroni/RedManager/releases/download/1.1.10/RedModManager.exe",
+    "hash": "5e66f2c978b73bc695d06df864bec712eb9cdb030ffaa96aa1553a4cbe419987",
+    "bin": "RedModManager.exe",
+    "shortcuts": [
+        [
+            "RedModManager.exe",
+            "Red Manager"
+        ]
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/ToniMacaroni/RedManager/releases/download/$version/RedModManager.exe"
+    }
+}
