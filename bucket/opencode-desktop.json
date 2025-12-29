@@ -12,12 +12,6 @@
             "hash": "6fba7949de03511c209bfbb1f38f59ea79e09cb779c94a41b3e3a7137e13da49"
         }
     },
-    "bin": [
-        [
-            "OpenCode.exe",
-            "opencode-desktop"
-        ]
-    ],
     "shortcuts": [
         [
             "OpenCode.exe",
