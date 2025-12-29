@@ -15,7 +15,7 @@
     "bin": [
         [
             "OpenCode.exe",
-            "OpenCode"
+            "opencode-desktop"
         ]
     ],
     "checkver": {
