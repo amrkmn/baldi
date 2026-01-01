@@ -1,33 +1,21 @@
 {
-    "version": "0.3.7",
+    "version": "0.3.8",
     "description": "Scoop With Bun (swb): A JavaScript implementation of Scoop using Bun's runtime",
     "homepage": "https://github.com/amrkmn/swb",
     "license": "MIT",
-    "url": "https://registry.npmjs.org/@amrkmn/swb/-/swb-0.3.7.tgz",
-    "hash": "sha512:426ce749edec67b252ca5cd2fb9e8bb10326b7f830d1fe7f8f4950ceb7ca9090a584f7378ceeaf8fbdea7b7ce0cfa18187f6cd2d0fb45a15391594ac1b45fd06",
-    "extract_dir": "package",
-    "depends": "main/bun",
-    "bin": [
-        [
-            "bun",
-            "swb",
-            "$dir\\dist\\cli.js"
-        ]
-    ],
-    "post_install": [
-        "Push-Location $dir",
-        "bun install --production --silent",
-        "Pop-Location"
-    ],
-    "checkver": {
-        "url": "https://registry.npmjs.org/@amrkmn/swb/latest",
-        "jsonpath": "$.version"
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/amrkmn/swb/releases/download/v0.3.8/swb-v0.3.8-windows-x64.zip",
+            "hash": "95eba3825fcc05d40765b1fd9d12380787d5812ffa0b25ffd3c4539363d752ae"
+        }
     },
+    "bin": "swb.exe",
+    "checkver": "github",
     "autoupdate": {
-        "url": "https://registry.npmjs.org/@amrkmn/swb/-/swb-$version.tgz",
-        "hash": {
-            "url": "https://registry.npmjs.org/@amrkmn/swb/$version",
-            "regex": "sha512-([A-Za-z0-9+/=]+)"
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/amrkmn/swb/releases/download/v$version/swb-v$version-windows-x64.zip"
+            }
         }
     }
 }
