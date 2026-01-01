@@ -2,7 +2,7 @@
     "version": "0.4.0",
     "description": "Scoop With Bun (swb): A JavaScript implementation of Scoop using Bun's runtime",
     "homepage": "https://github.com/amrkmn/swb",
-    "license": "MIT",
+    "license": "Apache-2.0",
     "architecture": {
         "64bit": {
             "url": "https://github.com/amrkmn/swb/releases/download/v0.4.0/swb-v0.4.0-windows-x64.zip",
