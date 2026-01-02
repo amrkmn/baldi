@@ -1,25 +1,25 @@
 {
-    "version": "0.4.2",
+    "version": "0.4.3",
     "description": "A TypeScript reimplementation of Scoop using Bun's runtime",
     "homepage": "https://github.com/amrkmn/swb",
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
             "url": [
-                "https://github.com/amrkmn/swb/releases/download/v0.4.2/swb-v0.4.2-windows-x64.zip",
-                "https://github.com/amrkmn/swb/releases/download/v0.4.2/swb-v0.4.2-windows-x64-baseline.zip"
+                "https://github.com/amrkmn/swb/releases/download/v0.4.3/swb-v0.4.3-windows-x64.zip",
+                "https://github.com/amrkmn/swb/releases/download/v0.4.3/swb-v0.4.3-windows-x64-baseline.zip"
             ],
             "hash": [
-                "08b46056264535d27026f754957d0ca0752a5a9c17d15842b675fdfd35940d2f",
-                "362528a1452d906e22355a5fba358ddf89eab88904d83085cd87f1e5100b10f1"
+                "9c55feaeace51c7b2c07ebd98b1fa4b4578e955393fd24fc04f39287b7c77c19",
+                "83c2beefe67906a88c68c1c0750718fc21537dcbdeb779a6243aad4c2564c737"
             ]
         }
     },
     "pre_install": [
         "$hasAVX2 = Start-Job -ScriptBlock { Add-Type -MemberDefinition '[DllImport(\"kernel32.dll\")] public static extern bool IsProcessorFeaturePresent(int ProcessorFeature);' -Name Kernel32 -Namespace Win32; [Win32.Kernel32]::IsProcessorFeaturePresent(40) } | Receive-Job -Wait -AutoRemoveJob",
         "$folder = if (-not $hasAVX2) { \"swb-v$version-windows-x64-baseline\" } else { \"swb-v$version-windows-x64\" }",
-        "Move-Item \"$folder\\*\" \"$dir\" -Force",
-        "Remove-Item \"$folder\" -Recurse -Force"
+        "Move-Item \"$dir\\$folder\\*\" \"$dir\" -Force",
+        "Remove-Item \"$dir\\swb-v*\" -Recurse -Force"
     ],
     "bin": "swb.exe",
     "checkver": "github",
