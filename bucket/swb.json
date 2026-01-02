@@ -1,20 +1,35 @@
 {
-    "version": "0.4.0",
-    "description": "A JavaScript implementation of Scoop using Bun's runtime",
+    "version": "0.4.2",
+    "description": "A TypeScript reimplementation of Scoop using Bun's runtime",
     "homepage": "https://github.com/amrkmn/swb",
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/amrkmn/swb/releases/download/v0.4.0/swb-v0.4.0-windows-x64.zip",
-            "hash": "3e774057d033a76d9a47fee75694a51035b606b15e67c39a5b709f0fce57afb4"
+            "url": [
+                "https://github.com/amrkmn/swb/releases/download/v0.4.2/swb-v0.4.2-windows-x64.zip",
+                "https://github.com/amrkmn/swb/releases/download/v0.4.2/swb-v0.4.2-windows-x64-baseline.zip"
+            ],
+            "hash": [
+                "08b46056264535d27026f754957d0ca0752a5a9c17d15842b675fdfd35940d2f",
+                "362528a1452d906e22355a5fba358ddf89eab88904d83085cd87f1e5100b10f1"
+            ]
         }
     },
+    "pre_install": [
+        "$hasAVX2 = Start-Job -ScriptBlock { Add-Type -MemberDefinition '[DllImport(\"kernel32.dll\")] public static extern bool IsProcessorFeaturePresent(int ProcessorFeature);' -Name Kernel32 -Namespace Win32; [Win32.Kernel32]::IsProcessorFeaturePresent(40) } | Receive-Job -Wait -AutoRemoveJob",
+        "$folder = if (-not $hasAVX2) { \"swb-v$version-windows-x64-baseline\" } else { \"swb-v$version-windows-x64\" }",
+        "Move-Item \"$folder\\*\" \"$dir\" -Force",
+        "Remove-Item \"$folder\" -Recurse -Force"
+    ],
     "bin": "swb.exe",
     "checkver": "github",
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/amrkmn/swb/releases/download/v$version/swb-v$version-windows-x64.zip"
+                "url": [
+                    "https://github.com/amrkmn/swb/releases/download/v$version/swb-v$version-windows-x64.zip",
+                    "https://github.com/amrkmn/swb/releases/download/v$version/swb-v$version-windows-x64-baseline.zip"
+                ]
             }
         }
     }
