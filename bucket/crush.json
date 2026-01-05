@@ -1,23 +1,23 @@
 {
-    "version": "0.30.2",
+    "version": "0.30.3",
     "description": "The glamourous AI coding agent for your favourite terminal",
     "homepage": "https://charm.sh/crush",
     "license": "FSL-1.1-MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/charmbracelet/crush/releases/download/v0.30.2/crush_0.30.2_Windows_x86_64.zip",
-            "hash": "a17cf4ff965ee4aa4e62c651baaa8efd4596fb0e4482c8fd5207d53d70c10e33",
-            "extract_dir": "crush_0.30.2_Windows_x86_64"
+            "url": "https://github.com/charmbracelet/crush/releases/download/v0.30.3/crush_0.30.3_Windows_x86_64.zip",
+            "hash": "dad57d94cec1235b1ac336ed7989e5f9b74f6a2d728aa3cd6324281d06b6b856",
+            "extract_dir": "crush_0.30.3_Windows_x86_64"
         },
         "32bit": {
-            "url": "https://github.com/charmbracelet/crush/releases/download/v0.30.2/crush_0.30.2_Windows_i386.zip",
-            "hash": "2cebafb4b283aac6f9018e952088c57ae1c0eeee1c0eb1dd02b4657082603cd6",
-            "extract_dir": "crush_0.30.2_Windows_i386"
+            "url": "https://github.com/charmbracelet/crush/releases/download/v0.30.3/crush_0.30.3_Windows_i386.zip",
+            "hash": "7099290661e514c9a3d7f9668abe8f549d32d2ff28202081868e6430d1532660",
+            "extract_dir": "crush_0.30.3_Windows_i386"
         },
         "arm64": {
-            "url": "https://github.com/charmbracelet/crush/releases/download/v0.30.2/crush_0.30.2_Windows_arm64.zip",
-            "hash": "6a22a8a7a694d4f84c6c29e75a60c420f3d50bd6588222dad0cfe205fbbbbc1b",
-            "extract_dir": "crush_0.30.2_Windows_arm64"
+            "url": "https://github.com/charmbracelet/crush/releases/download/v0.30.3/crush_0.30.3_Windows_arm64.zip",
+            "hash": "c9fc9f687a71caddb6109b986b97167f260f6891cfa5d5895f883679f492bbc6",
+            "extract_dir": "crush_0.30.3_Windows_arm64"
         }
     },
     "bin": "crush.exe",
