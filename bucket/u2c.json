@@ -1,0 +1,37 @@
+{
+    "version": "2026.01.02",
+    "description": "CLI uploader for Copyparty servers",
+    "homepage": "https://github.com/9001/copyparty",
+    "license": "MIT",
+    "depends": "python",
+    "architecture": {
+        "64bit": {
+            "url": "https://raw.githubusercontent.com/9001/copyparty/cce12107927401b82f05ce654398493716a75770/bin/u2c.py",
+            "hash": "9ac8c711b68304c630903d8bc4a1ad636994f296f5d5df5f054996c19f7cd3f0"
+        }
+    },
+    "bin": [
+        [
+            "python",
+            "u2c",
+            "$dir\\u2c.py"
+        ]
+    ],
+    "checkver": {
+        "script": [
+            "$commits = Invoke-RestMethod \"https://api.github.com/repos/9001/copyparty/commits?path=bin/u2c.py&per_page=1\"",
+            "$commit = $commits[0]",
+            "$version = $commit.commit.author.date.ToString('yyyy.MM.dd')",
+            "$hash = $commit.sha",
+            "Write-Output \"$version|$hash\""
+        ],
+        "regex": "^(?<version>\\d{4}\\.\\d{2}\\.\\d{2})\\|(?<commit>[a-f0-9]+)$"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://raw.githubusercontent.com/9001/copyparty/$matchCommit/bin/u2c.py"
+            }
+        }
+    }
+}
