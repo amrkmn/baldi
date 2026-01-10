@@ -1,5 +1,5 @@
 {
-    "version": "2026.01.07",
+    "version": "2026.01.07.af6a1dd0b2",
     "description": "A complete, cross-platform solution to record, convert and stream audio and video.",
     "homepage": "https://ffmpeg.org",
     "license": "GPL-3.0-or-later",
@@ -23,9 +23,10 @@
         "script": [
             "$text = Invoke-RestMethod 'https://www.gyan.dev/ffmpeg/builds/ffmpeg-git-full.7z.ver'",
             "$date = ($text -split '-git-')[0] -replace '-', '.'",
-            "Write-Output \"$date|$text\""
+            "$commithash = ($text -split '-git-')[1]",
+            "Write-Output \"$date.$commithash|$text\""
         ],
-        "regex": "^(?<version>\\d{4}\\.\\d{2}\\.\\d{2})\\|(?<original>\\d{4}-\\d{2}-\\d{2}-git-[a-f0-9]+)$"
+        "regex": "^(?<version>\\d{4}\\.\\d{2}\\.\\d{2}\\.[a-f0-9]+)\\|(?<original>\\d{4}-\\d{2}-\\d{2}-git-[a-f0-9]+)$"
     },
     "autoupdate": {
         "architecture": {
