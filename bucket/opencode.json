@@ -10,11 +10,6 @@
         }
     },
     "bin": "opencode.exe",
-    "pre_install": "if (-not (Test-Path \"$persist_dir\\opencode.json\")) { New-Item \"$dir\\opencode.json\" -ItemType file | Out-Null }",
-    "persist": "opencode.json",
-    "env_set": {
-        "OPENCODE_CONFIG": "$dir\\opencode.json"
-    },
     "checkver": {
         "github": "https://github.com/sst/opencode"
     },
