@@ -6,6 +6,12 @@
     "url": "https://github.com/macarooni-man/auto-mcs/releases/download/v2.3.5/auto-mcs-windows-2.3.5.zip",
     "hash": "0d063c12b122987f0b0f541342e67792b53d09f32a640564b4705c1458a0482e",
     "bin": "auto-mcs.exe",
+    "shortcuts": [
+        [
+            "auto-mcs.exe",
+            "auto-mcs"
+        ]
+    ],
     "checkver": {
         "github": "https://github.com/macarooni-man/auto-mcs"
     },
