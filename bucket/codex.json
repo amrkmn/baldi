@@ -1,16 +1,16 @@
 {
-    "version": "0.86.0",
+    "version": "0.87.0",
     "description": "OpenAI's coding agent that runs in your terminal",
     "homepage": "https://github.com/openai/codex",
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/openai/codex/releases/download/rust-v0.86.0/codex-x86_64-pc-windows-msvc.exe.zst#/codex.exe.zst",
-            "hash": "9b6960f64fac2db7e611a3d5e839769444ab44118f54fd63e7d12880ccc212a3"
+            "url": "https://github.com/openai/codex/releases/download/rust-v0.87.0/codex-x86_64-pc-windows-msvc.exe.zst#/codex.exe.zst",
+            "hash": "87b6056b53a75ab2fd92bad5fbf45b5756357ff28b2d7ed5e9208a9fd188373a"
         },
         "arm64": {
-            "url": "https://github.com/openai/codex/releases/download/rust-v0.86.0/codex-aarch64-pc-windows-msvc.exe.zst#/codex.exe.zst",
-            "hash": "045e632e8e7c72862c63709d57ce53b95aa0c59996d89039e132a5361a70685b"
+            "url": "https://github.com/openai/codex/releases/download/rust-v0.87.0/codex-aarch64-pc-windows-msvc.exe.zst#/codex.exe.zst",
+            "hash": "4dc58ebdf4b77ebd35c2a8a8c071e623e545c34e219c73355d2fb5334bc9cd1b"
         }
     },
     "bin": "codex.exe",
