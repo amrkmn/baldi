@@ -1,10 +1,10 @@
 {
-    "version": "1.20.2",
+    "version": "1.20.3",
     "description": "Portable file server",
     "homepage": "https://github.com/9001/copyparty",
     "license": "MIT",
-    "url": "https://github.com/9001/copyparty/releases/download/v1.20.2/copyparty-sfx.py",
-    "hash": "50d4ac96d9b6c16486025fb4a864f12e7ce2f37f43fb3a7eb06ce19580026cc4",
+    "url": "https://github.com/9001/copyparty/releases/download/v1.20.3/copyparty-sfx.py",
+    "hash": "769ddba7255e71c7d3435c507968d58df6b9397a97c483b81d53e3230dece437",
     "depends": "python",
     "bin": [
         [
