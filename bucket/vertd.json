@@ -1,0 +1,30 @@
+{
+    "version": "2025.12.04.8abb761",
+    "description": "VERT's solution to crappy video conversion services.",
+    "homepage": "https://github.com/VERT-sh/vertd",
+    "license": "GPL-3.0-only",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/VERT-sh/vertd/releases/download/nightly-8abb761889d3138f5b91401a533bc7e7211a99ff/vertd-windows-x86_64.exe#/vertd.exe",
+            "hash": "c861c5eecaa5b8c0cf802e8748c7fa96d070f824dd9cb2fb0495a135d4ad50f1"
+        }
+    },
+    "bin": "vertd.exe",
+    "checkver": {
+        "script": [
+            "$release = Invoke-RestMethod 'https://api.github.com/repos/VERT-sh/vertd/releases/latest'",
+            "$tag = $release.tag_name",
+            "$date = $release.published_at.ToString('yyyy.MM.dd')",
+            "$sha = ($tag -replace 'nightly-', '').Substring(0,7)",
+            "Write-Output \"$date.$sha|$tag\""
+        ],
+        "regex": "^(?<version>\\d{4}\\.\\d{2}\\.\\d{2}\\.[a-f0-9]{7})\\|(?<tag>.+)$"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/VERT-sh/vertd/releases/download/$matchTag/vertd-windows-x86_64.exe#/vertd.exe"
+            }
+        }
+    }
+}
