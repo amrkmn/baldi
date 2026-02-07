@@ -17,7 +17,7 @@
     },
     "pre_install": [
         "$hasAVX2 = Start-Job -ScriptBlock { Add-Type -MemberDefinition '[DllImport(\"kernel32.dll\")] public static extern bool IsProcessorFeaturePresent(int ProcessorFeature);' -Name Kernel32 -Namespace Win32; [Win32.Kernel32]::IsProcessorFeaturePresent(40) } | Receive-Job -Wait -AutoRemoveJob",
-        "$folder = if (-not $hasAVX2) { \"swb-v$version-windows-x64-baseline\" } else { \"swb-v$version-windows-x64\" }",
+        "$folder = if (-not $hasAVX2) { \"swb-windows-x64-baseline\" } else { \"swb-windows-x64\" }",
         "Move-Item \"$dir\\$folder\\*\" \"$dir\" -Force",
         "Remove-Item \"$dir\\swb-v*\" -Recurse -Force"
     ],
