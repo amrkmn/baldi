@@ -1,17 +1,17 @@
 {
-    "version": "0.7.5",
+    "version": "0.7.6",
     "description": "A TypeScript reimplementation of Scoop using Bun's runtime",
     "homepage": "https://github.com/amrkmn/swb",
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
             "url": [
-                "https://github.com/amrkmn/swb/releases/download/v0.7.5/swb-windows-x64.zip",
-                "https://github.com/amrkmn/swb/releases/download/v0.7.5/swb-windows-x64-baseline.zip"
+                "https://github.com/amrkmn/swb/releases/download/v0.7.6/swb-windows-x64.zip",
+                "https://github.com/amrkmn/swb/releases/download/v0.7.6/swb-windows-x64-baseline.zip"
             ],
             "hash": [
-                "cf5c809b4e733db83401b068ec217742da859617f2f01d19fd4b887171f0fef6",
-                "db793a51d43e0e486c1901daed343246ce5fb233eb31b759426dcba25a6d0bdd"
+                "f3dac5d9868dd97ba63d92325d0efcd752c1a3efe65e0c31fe702d7ae58f0ce4",
+                "67484937a0522ceb98d2aa356ec2fe6484e2f74c1bc5029945831f4f1fcc6196"
             ]
         }
     },
