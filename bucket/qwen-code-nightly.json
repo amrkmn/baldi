@@ -11,7 +11,7 @@
         [
             "node",
             "qwen",
-            "$dir\\dist\\index.js"
+            "$dir\\cli.js"
         ]
     ],
     "post_install": [
