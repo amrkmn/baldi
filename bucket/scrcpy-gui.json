@@ -1,0 +1,23 @@
+{
+    "version": "3.1.0",
+    "description": "A modern, high-performance GUI for the scrcpy.",
+    "homepage": "https://github.com/kil0bit-kb/scrcpy-gui",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/kil0bit-kb/scrcpy-gui/releases/download/v3.1.0/ScrcpyGUI_3.1.0_x64_Portable.exe#/ScrcpyGUI.exe",
+            "hash": "1336da289e59574cdace4e531851366311201f8dbcdbace9b2844c7ac8b391ae"
+        }
+    },
+    "bin": "ScrcpyGUI.exe",
+    "shortcuts": [
+        [
+            "ScrcpyGUI.exe",
+            "Scrcpy GUI"
+        ]
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/kil0bit-kb/scrcpy-gui/releases/download/v$version/ScrcpyGUI_$version_x64_Portable.exe#/ScrcpyGUI.exe"
+    }
+}
