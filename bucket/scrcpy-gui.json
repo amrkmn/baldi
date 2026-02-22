@@ -3,6 +3,9 @@
     "description": "A modern, high-performance GUI for the scrcpy.",
     "homepage": "https://github.com/kil0bit-kb/scrcpy-gui",
     "license": "MIT",
+    "suggest": {
+        "scrcpy": "main/scrcpy"
+    },
     "architecture": {
         "64bit": {
             "url": "https://github.com/kil0bit-kb/scrcpy-gui/releases/download/v3.1.0/ScrcpyGUI_3.1.0_x64_Portable.exe#/ScrcpyGUI.exe",
