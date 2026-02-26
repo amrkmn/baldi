@@ -1,18 +1,22 @@
 {
-    "version": "0.7.7",
+    "version": "0.7.8",
     "description": "A TypeScript reimplementation of Scoop using Bun's runtime",
     "homepage": "https://github.com/amrkmn/swb",
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
             "url": [
-                "https://github.com/amrkmn/swb/releases/download/v0.7.7/swb-windows-x64.zip",
-                "https://github.com/amrkmn/swb/releases/download/v0.7.7/swb-windows-x64-baseline.zip"
+                "https://github.com/amrkmn/swb/releases/download/v0.7.8/swb-windows-x64.zip",
+                "https://github.com/amrkmn/swb/releases/download/v0.7.8/swb-windows-x64-baseline.zip"
             ],
             "hash": [
-                "f6aa00b1bad69c4e674dd42cf191c3a8d6d3a6ec69ffe6d8f0a5b33af046168b",
-                "07e27dbb5aa9293ee41aad64a65cbe163a9ab09fc2d1c42c5ac06ca59c469da2"
+                "8ce7181b0ff20850b87145ef0071c444c664e1aaeaf4b2278ef94346e90db279",
+                "092f0237a7102e5940bda1397cb07dbef6638dc680388562f1fcc9b9b4080f80"
             ]
+        },
+        "arm64": {
+            "url": "https://github.com/amrkmn/swb/releases/download/v0.7.8/swb-windows-arm64.zip",
+            "hash": "9514f7f8ccf0ac2759375238269f8d3acb448d4d80548c88684680a7395e49e1"
         }
     },
     "pre_install": [
@@ -33,6 +37,9 @@
                     "https://github.com/amrkmn/swb/releases/download/v$version/swb-windows-x64.zip",
                     "https://github.com/amrkmn/swb/releases/download/v$version/swb-windows-x64-baseline.zip"
                 ]
+            },
+            "arm64": {
+                "url": "https://github.com/amrkmn/swb/releases/download/v$version/swb-windows-arm64.zip"
             }
         },
         "hash": {
