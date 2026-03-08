@@ -1,0 +1,23 @@
+{
+    "version": "1.5.0",
+    "description": "Interactive Terraria v1.4 world map viewer.",
+    "homepage": "https://terramap.github.io",
+    "license": "GPL-3.0-only",
+    "url": "https://terramap.github.io/resources/TerraMap-1.5.0.zip",
+    "hash": "cdf7af66421fcce473810c9161a77249d3784ae194e761727ea1c97fef9f535f",
+    "extract_dir": "TerraMap-1.5.0",
+    "bin": "TerraMap.exe",
+    "shortcuts": [
+        [
+            "TerraMap.exe",
+            "TerraMap"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/TerraMap/windows"
+    },
+    "autoupdate": {
+        "url": "https://terramap.github.io/resources/TerraMap-$version.zip",
+        "extract_dir": "TerraMap-$version"
+    }
+}
