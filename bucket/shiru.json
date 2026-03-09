@@ -1,10 +1,10 @@
 {
-    "version": "6.5.0",
+    "version": "6.5.1",
     "description": "Personal media library manager with real-time streaming and anime support.",
     "homepage": "https://github.com/RockinChaos/Shiru",
     "license": "GPL-3.0-only",
-    "url": "https://github.com/RockinChaos/Shiru/releases/download/v6.5.0/win-Shiru-v6.5.0-portable.exe#/Shiru.exe",
-    "hash": "9b096a6eaefea4429b166c1f6d5b4265fd92f8a6b20f18c18897f9bcf35ede4a",
+    "url": "https://github.com/RockinChaos/Shiru/releases/download/v6.5.1/win-Shiru-v6.5.1-portable.exe#/Shiru.exe",
+    "hash": "cd0c22aa116926079d6f5ea57628a54ef9e59ff0710b2f5e6d1bec20414a015f",
     "bin": "Shiru.exe",
     "shortcuts": [
         [
