@@ -13,7 +13,7 @@
             "hash": "45e88b390a2766982bc8e776e9d31a2be303021d7755b765949d8e13f16e9de3"
         }
     },
-    "pre_install": "Get-ChildItem \"$dir\" -Exclude \"OpenCode.exe\" | Remove-Item -Recurse -Force",
+    "pre_install": "Remove-Item \"$dir\\`$*\" -Force -Recurse -ErrorAction Ignore",
     "shortcuts": [
         [
             "OpenCode.exe",
