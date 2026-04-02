@@ -8,6 +8,10 @@
             "url": "https://github.com/amrkmn/scg/releases/download/v0.1.1/scg-amd64.exe#/scg.exe",
             "hash": "1a1e6bb7f21cb3fa305d964f7d46c449c195ccd6b100805dd2001e44b105360a"
         },
+        "32bit": {
+            "url": "https://github.com/amrkmn/scg/releases/download/v0.1.1/scg-386.exe#/scg.exe",
+            "hash": "ed39169f5e7e0831e2cef0da87383f484af4ed740457151cf8b2b6309bae98ca"
+        },
         "arm64": {
             "url": "https://github.com/amrkmn/scg/releases/download/v0.1.1/scg-arm64.exe#/scg.exe",
             "hash": "874362b1d9f21b6092c3ed34ba968cf5da9ac948aa727283a00eea474c89302b"
@@ -19,6 +23,9 @@
         "architecture": {
             "64bit": {
                 "url": "https://github.com/amrkmn/scg/releases/download/v$version/scg-amd64.exe#/scg.exe"
+            },
+            "32bit": {
+                "url": "https://github.com/amrkmn/scg/releases/download/v$version/scg-386.exe#/scg.exe"
             },
             "arm64": {
                 "url": "https://github.com/amrkmn/scg/releases/download/v$version/scg-arm64.exe#/scg.exe"
