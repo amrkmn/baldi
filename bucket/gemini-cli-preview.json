@@ -11,7 +11,7 @@
         [
             "node",
             "gemini",
-            "$dir\\dist\\index.js"
+            "$dir\\bundle\\gemini.js"
         ]
     ],
     "post_install": [
