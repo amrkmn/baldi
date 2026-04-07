@@ -1,5 +1,5 @@
 {
-    "version": "2026.04.05.233732",
+    "version": "2026.04.06.233732",
     "description": "yt-dlp nightly builds",
     "homepage": "https://github.com/yt-dlp/yt-dlp-nightly-builds",
     "license": "Unlicense",
@@ -8,12 +8,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/download/2026.04.05.233732/yt-dlp.exe",
-            "hash": "0caa73c6467840e106dc5e4886457acf1837f838072c0500ecb9067ac391c0e1"
+            "url": "https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/download/2026.04.06.233732/yt-dlp.exe",
+            "hash": "28502b0de20c35a65e5f9ca5b163be54f70a3f177a1ce43824067f6ee58f5bb0"
         },
         "32bit": {
-            "url": "https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/download/2026.04.05.233732/yt-dlp_x86.exe#/yt-dlp.exe",
-            "hash": "76e6f6a48961bfb6e13f2aeff2956afab3e0fe8db34015fe4bc20c0e2e3f2200"
+            "url": "https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/download/2026.04.06.233732/yt-dlp_x86.exe#/yt-dlp.exe",
+            "hash": "6beb82e4d9c4d1b0ccd2e0a1b38c20e86ce07b2324a7b4b8993659637b57737b"
         }
     },
     "bin": "yt-dlp.exe",
