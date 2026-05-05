@@ -10,19 +10,13 @@
             "extract_dir": "ffmpeg-8.1.1-full_build-shared"
         }
     },
-    "post_install": [
-        "# Workaround for https://github.com/ScoopInstaller/Main/issues/2611",
-        "Remove-Item \"$scoopdir\\shims\\ffmpeg.ps1\", \"$scoopdir\\shims\\ffplay.ps1\", \"$scoopdir\\shims\\ffprobe.ps1\" -ErrorAction SilentlyContinue"
-    ],
+    "env_add_path": "bin",
+    "env_set": {
+        "FFMPEG_DIR": "$dir"
+    },
     "persist": "fonts",
-    "bin": [
-        "bin\\ffmpeg.exe",
-        "bin\\ffplay.exe",
-        "bin\\ffprobe.exe"
-    ],
     "checkver": {
-        "url": "https://www.gyan.dev/ffmpeg/builds/ffmpeg-release-full-shared.7z.ver",
-        "regex": "([\\d.]+)"
+        "github": "https://github.com/GyanD/codexffmpeg"
     },
     "autoupdate": {
         "architecture": {
