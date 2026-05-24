@@ -1,5 +1,5 @@
 {
-    "version": "3.5.4",
+    "version": "4.0.0",
     "description": "A modern, high-performance GUI for the scrcpy.",
     "homepage": "https://github.com/kil0bit-kb/scrcpy-gui",
     "license": "MIT",
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/kil0bit-kb/scrcpy-gui/releases/download/v3.5.4/ScrcpyGUI_3.5.4_x64-setup.exe#/dl.7z",
-            "hash": "463fd4293298c828fd74a7165598f3819e0cf0f72e372655e40e4fe41bf99d13"
+            "url": "https://github.com/kil0bit-kb/scrcpy-gui/releases/download/v4.0.0/ScrcpyGUI_4.0.0_x64-setup.exe#/dl.7z",
+            "hash": "bcde970e81affe982c7a3f2f5d4cf174ef71d81174f867b6947f5e049357a72c"
         }
     },
     "pre_install": "Remove-Item -Path '$dir\\`$PLUGINSDIR', '$dir\\[NSIS].nsi' -Recurse -Force -ErrorAction SilentlyContinue",
