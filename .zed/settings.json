@@ -1,0 +1,17 @@
+{
+    "format_on_save": "on",
+    "lsp": {
+        "json-language-server": {
+            "settings": {
+                "json": {
+                    "schemas": [
+                        {
+                            "fileMatch": ["bucket/**/*.json"],
+                            "url": "https://raw.githubusercontent.com/ScoopInstaller/Scoop/master/schema.json",
+                        },
+                    ],
+                },
+            },
+        },
+    },
+}
