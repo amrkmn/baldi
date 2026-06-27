@@ -1,20 +1,20 @@
 {
-    "version": "0.4.3",
+    "version": "0.4.4",
     "description": "A Go implementation of Scoop",
     "homepage": "https://github.com/amrkmn/scg",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/amrkmn/scg/releases/download/v0.4.3/scg-amd64.exe#/scg.exe",
-            "hash": "98db8ca124f8aa9615aa83b4f9ababb207577f5f7ad661ddf8c9cca1b76b5079"
+            "url": "https://github.com/amrkmn/scg/releases/download/v0.4.4/scg-amd64.exe#/scg.exe",
+            "hash": "1dd1ebae2b03df50bed77bd2bd737e34dcc9c7be3aae9353ee30e362a527d665"
         },
         "32bit": {
-            "url": "https://github.com/amrkmn/scg/releases/download/v0.4.3/scg-386.exe#/scg.exe",
-            "hash": "d1a331359761a081f4f3e1b45e63c3208407b260842dc9eeceb98b20f2dc15e5"
+            "url": "https://github.com/amrkmn/scg/releases/download/v0.4.4/scg-386.exe#/scg.exe",
+            "hash": "3fd8719f4e114254c0e7360877a96ed8cb0e151634e35a56eb614d53690e8bac"
         },
         "arm64": {
-            "url": "https://github.com/amrkmn/scg/releases/download/v0.4.3/scg-arm64.exe#/scg.exe",
-            "hash": "f81f98441fe93e54a58002f102f60ef9ad8cb990123c355639de98a394bb92a0"
+            "url": "https://github.com/amrkmn/scg/releases/download/v0.4.4/scg-arm64.exe#/scg.exe",
+            "hash": "e337124a0eeb42c4182d6099f8b18f5ea1edbbe2089bb7cc45c0c0e0a59e96c2"
         }
     },
     "bin": "scg.exe",
