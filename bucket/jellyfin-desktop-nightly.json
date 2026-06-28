@@ -1,0 +1,49 @@
+{
+    "version": "906",
+    "description": "Jellyfin Desktop Client (nightly.link)",
+    "homepage": "https://github.com/jellyfin/jellyfin-desktop",
+    "license": "GPL-2.0-only",
+    "architecture": {
+        "64bit": {
+            "url": "https://nightly.link/jellyfin/jellyfin-desktop/actions/artifacts/7896645786.zip",
+            "hash": "08a6c5711b71a13a773d9cce38bb627e1a2ef5cae7710a041d6c1f12b4384799"
+        },
+        "arm64": {
+            "url": "https://nightly.link/jellyfin/jellyfin-desktop/actions/artifacts/7896651684.zip",
+            "hash": "21a3c78ce7ecca1034ca63e5f6fb28995b54c087695b97716a11a7a40afe1306"
+        }
+    },
+    "pre_install": [
+        "$inner = Get-ChildItem \"$dir\\JellyfinDesktop-*.zip\" | Select-Object -First 1",
+        "if ($inner) { Expand-Archive $inner.FullName -DestinationPath \"$dir\" -Force; Remove-Item $inner.FullName -Force }"
+    ],
+    "bin": "jellyfin-desktop.exe",
+    "shortcuts": [
+        [
+            "jellyfin-desktop.exe",
+            "Jellyfin Desktop"
+        ]
+    ],
+    "checkver": {
+        "script": [
+            "$headers = @{ 'Accept' = 'application/vnd.github+json' }; if ($env:GITHUB_TOKEN) { $headers['Authorization'] = \"Bearer $env:GITHUB_TOKEN\" }",
+            "$r = Invoke-RestMethod 'https://api.github.com/repos/jellyfin/jellyfin-desktop/actions/workflows/build-windows.yml/runs?per_page=1&status=completed&branch=main' -Headers $headers",
+            "$run = $r.workflow_runs[0]",
+            "$artifacts = Invoke-RestMethod $run.artifacts_url -Headers $headers",
+            "$x64 = ($artifacts.artifacts | Where-Object { $_.name -eq 'windows-x64' }).id",
+            "$arm64 = ($artifacts.artifacts | Where-Object { $_.name -eq 'windows-arm64' }).id",
+            "Write-Output \"$($run.run_number)-$x64-$arm64\""
+        ],
+        "regex": "(?<version>\\d+)-(?<x64id>\\d+)-(?<arm64id>\\d+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://nightly.link/jellyfin/jellyfin-desktop/actions/artifacts/$matchX64id.zip"
+            },
+            "arm64": {
+                "url": "https://nightly.link/jellyfin/jellyfin-desktop/actions/artifacts/$matchArm64id.zip"
+            }
+        }
+    }
+}
