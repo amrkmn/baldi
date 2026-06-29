@@ -1,10 +1,10 @@
 {
-    "version": "1.14.3",
+    "version": "1.15.0",
     "description": "Interactive CLI tool to update GitHub Actions to latest versions with SHA pinning",
     "homepage": "https://github.com/azat-io/actions-up",
     "license": "MIT",
-    "url": "https://registry.npmjs.org/actions-up/-/actions-up-1.14.3.tgz",
-    "hash": "sha512:37c8ef577042c257b319ed37324c2e8c7c30ff99f9c9dd413035943a46bf30b1f591c3701a07457d48e14caa6b37a4ef6e0ce22af4de503a5f7afcc42850c32c",
+    "url": "https://registry.npmjs.org/actions-up/-/actions-up-1.15.0.tgz",
+    "hash": "sha512:fa3597c9648448f9d5ae44946745209ec273a5c01bae0725d1f694a4ce3b525c503c157c99b478a95b4008dd43178339edfb8c65fb8b24797d298366323ac531",
     "extract_dir": "package",
     "depends": "main/nodejs-lts",
     "bin": [
