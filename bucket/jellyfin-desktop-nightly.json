@@ -39,10 +39,20 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://nightly.link/jellyfin/jellyfin-desktop/actions/artifacts/$matchX64id.zip"
+                "url": "https://nightly.link/jellyfin/jellyfin-desktop/actions/artifacts/$matchX64id.zip",
+                "hash": {
+                    "mode": "json",
+                    "url": "https://api.github.com/repos/jellyfin/jellyfin-desktop/actions/artifacts/$matchX64id",
+                    "jp": "$.digest"
+                }
             },
             "arm64": {
-                "url": "https://nightly.link/jellyfin/jellyfin-desktop/actions/artifacts/$matchArm64id.zip"
+                "url": "https://nightly.link/jellyfin/jellyfin-desktop/actions/artifacts/$matchArm64id.zip",
+                "hash": {
+                    "mode": "json",
+                    "url": "https://api.github.com/repos/jellyfin/jellyfin-desktop/actions/artifacts/$matchArm64id",
+                    "jp": "$.digest"
+                }
             }
         }
     }
