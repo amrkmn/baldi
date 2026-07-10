@@ -1,16 +1,16 @@
 {
-    "version": "0.4.5",
+    "version": "0.4.6",
     "description": "The all-in-one Node.js toolkit",
     "homepage": "https://nubjs.com",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/nubjs/nub/releases/download/v0.4.5/nub-win32-x64.zip",
-            "hash": "d22cacafe807f46cad4cb7c70869d3a9b44b3981b695afb3cb14397524f14358"
+            "url": "https://github.com/nubjs/nub/releases/download/v0.4.6/nub-win32-x64.zip",
+            "hash": "9a70b56ede3ed4f5f9f163d3e137a8dea7a41e8729609d09a29e126b1f25e9ac"
         },
         "arm64": {
-            "url": "https://github.com/nubjs/nub/releases/download/v0.4.5/nub-win32-arm64.zip",
-            "hash": "fa7929abdb8848746026a5c7429029ef577b4d329003a0f2c4ec34dcb815259c"
+            "url": "https://github.com/nubjs/nub/releases/download/v0.4.6/nub-win32-arm64.zip",
+            "hash": "e53ca06074657ace76e1626d7728fb56b701722b19e3eb77803cc67938c1e3de"
         }
     },
     "bin": [
