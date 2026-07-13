@@ -1,16 +1,16 @@
 {
-    "version": "985",
+    "version": "1000",
     "description": "Jellyfin Desktop Client (nightly.link)",
     "homepage": "https://github.com/jellyfin/jellyfin-desktop",
     "license": "GPL-2.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://nightly.link/jellyfin/jellyfin-desktop/actions/artifacts/8216956892.zip",
-            "hash": "f43165bcd88a6f5ababc5c1ff8a4fa90263d77e4cff81bb86e024ef41bf7f4fc"
+            "url": "https://nightly.link/jellyfin/jellyfin-desktop/actions/artifacts/8281245319.zip",
+            "hash": "a7bd10d3c7073c8bcc770cf3832e1d0d5a04a0ebcce7b6a1eb2ae33b4a3f604b"
         },
         "arm64": {
-            "url": "https://nightly.link/jellyfin/jellyfin-desktop/actions/artifacts/8217004823.zip",
-            "hash": "e5f8264faf272ee539fe187edf67a4bf40d4ba9d4db71e695cf539511b916371"
+            "url": "https://nightly.link/jellyfin/jellyfin-desktop/actions/artifacts/8281354279.zip",
+            "hash": "26e767f924782ab223bb5985aa8ef27cf033972351bdd8e1cb0e36e321aa4b13"
         }
     },
     "pre_install": [
