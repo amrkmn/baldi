@@ -1,12 +1,12 @@
 {
-    "version": "1.0.6",
+    "version": "1.0.7",
     "description": "CLI for internet speed test via CloudFlare",
     "homepage": "https://github.com/kavehtehrani/cloudflare-speed-cli",
     "license": "GPL-3.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/kavehtehrani/cloudflare-speed-cli/releases/download/v1.0.6/cloudflare-speed-cli-x86_64-pc-windows-msvc.zip",
-            "hash": "e6152dec1305504019c3bbc90cd9f898b9d883dbf5de056f4d6b67b4bb82b282"
+            "url": "https://github.com/kavehtehrani/cloudflare-speed-cli/releases/download/v1.0.7/cloudflare-speed-cli-x86_64-pc-windows-msvc.zip",
+            "hash": "412c8b373b22ea71a96997b3beaa0dca555532b4e03468ecc5bc627bebd7a416"
         }
     },
     "bin": "cloudflare-speed-cli.exe",
