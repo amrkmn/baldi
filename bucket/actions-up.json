@@ -6,7 +6,7 @@
     "url": "https://registry.npmjs.org/actions-up/-/actions-up-1.16.0.tgz",
     "hash": "sha512:8bfd9c0e4f19e5851ab71d5ab66c66671e6309ed33ea7c290ef062a9fe0507b713b8a5e712fa702dbc031a5bca93003b9fe48e1f1968b0680e841257b475b720",
     "extract_dir": "package",
-    "depends": "main/nodejs-lts",
+    "depends": "main/nodejs",
     "bin": [
         [
             "node",

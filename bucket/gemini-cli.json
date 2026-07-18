@@ -6,7 +6,7 @@
     "url": "https://registry.npmjs.org/@google/gemini-cli/-/gemini-cli-0.51.0.tgz",
     "hash": "sha512:271e1fa73729dd86bdf5c9856b52c171f49d02708d392b3b6496c9777bafa6ba94a06fa49323676558e304e97ce18e9dc65220205fb99bc306151b92a3dde28e",
     "extract_dir": "package",
-    "depends": "main/nodejs-lts",
+    "depends": "main/nodejs",
     "bin": [
         [
             "node",

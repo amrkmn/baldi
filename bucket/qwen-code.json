@@ -6,7 +6,7 @@
     "url": "https://registry.npmjs.org/@qwen-code/qwen-code/-/qwen-code-0.19.11.tgz",
     "hash": "sha512:1dfee9fc9eddb04d0948ffef1b79bcc7effb631d147dcd9464b6935479e8850a22919dd05a25d3e213188d3ac03bb7cf4ef1a9aab916a8ea7b56ad9f11f32d4c",
     "extract_dir": "package",
-    "depends": "main/nodejs-lts",
+    "depends": "main/nodejs",
     "bin": [
         [
             "node",
