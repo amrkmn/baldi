@@ -14,14 +14,14 @@
         }
     },
     "pre_install": [
-        "$inner = Get-ChildItem \"$dir\\JellyfinDesktop-*.zip\" | Select-Object -First 1",
+        "$inner = Get-ChildItem \"$dir\\JelliumDesktop-*.zip\" | Select-Object -First 1",
         "if ($inner) { Expand-Archive $inner.FullName -DestinationPath \"$dir\" -Force; Remove-Item $inner.FullName -Force }"
     ],
-    "bin": "jellyfin-desktop.exe",
+    "bin": "jellium-desktop.exe",
     "shortcuts": [
         [
-            "jellyfin-desktop.exe",
-            "Jellyfin Desktop"
+            "jellium-desktop.exe",
+            "Jellium Desktop"
         ]
     ],
     "checkver": {
