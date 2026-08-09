@@ -1,16 +1,16 @@
 {
-    "version": "1084",
+    "version": "1086",
     "description": "Jellium Desktop (nightly.link)",
     "homepage": "https://github.com/andrewrabert/jellium-desktop",
     "license": "GPL-2.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://nightly.link/andrewrabert/jellium-desktop/actions/artifacts/8955609906.zip",
-            "hash": "3010b40c6d62bd5a807d2ae013d77c881511add499d3201de8910489b8bb3f82"
+            "url": "https://nightly.link/andrewrabert/jellium-desktop/actions/artifacts/9043410974.zip",
+            "hash": "7621412c03d6982513c2056e4c26aec9fca67957dd580ae7b3bc2365a5e2b4f6"
         },
         "arm64": {
-            "url": "https://nightly.link/andrewrabert/jellium-desktop/actions/artifacts/8955648263.zip",
-            "hash": "5defa1b1a230e1663ce4f5147644f0dab407e7380c9ca553987c80b41461c9e3"
+            "url": "https://nightly.link/andrewrabert/jellium-desktop/actions/artifacts/9043443071.zip",
+            "hash": "a3afb87a226a3aae889aeecaed4b36824ccc4061543663373368b92857d0af63"
         }
     },
     "pre_install": [
