@@ -13,6 +13,9 @@
             "hash": "d118a96ddc5ba16b0b0ebf5fa4662d62f2a3682e0063d41ce3cf43d922f6eb66"
         }
     },
+    "env_set": {
+        "PI_SKIP_VERSION_CHECK": "1"
+    },
     "bin": "pi.exe",
     "checkver": {
         "github": "https://github.com/earendil-works/pi"
