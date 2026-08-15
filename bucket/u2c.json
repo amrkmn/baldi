@@ -1,11 +1,11 @@
 {
-    "version": "2026.07.26.0f2040c",
+    "version": "2026.08.15.4729747",
     "description": "CLI uploader for Copyparty servers",
     "homepage": "https://github.com/9001/copyparty",
     "license": "MIT",
     "depends": "python",
-    "url": "https://raw.githubusercontent.com/9001/copyparty/0f2040c383aef668ece1d897a36431653f0a3385/bin/u2c.py",
-    "hash": "2495487a03623b0e97ff7db20af99fdd3f119277a0caa9c31345e537bf61c213",
+    "url": "https://raw.githubusercontent.com/9001/copyparty/47297475bf86f6152e717e5f3af79256357d4949/bin/u2c.py",
+    "hash": "a554093f2dffa246576a8fb1b54741c66b757634b994924822cb6909dcf8ed87",
     "bin": [
         [
             "python",
