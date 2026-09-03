@@ -22,8 +22,7 @@
         ]
     ],
     "checkver": {
-        "url": "https://registry.npmjs.org/@nubjs/nub/latest",
-        "jsonpath": "$.version"
+        "github": "https://github.com/nubjs/nub"
     },
     "autoupdate": {
         "architecture": {
