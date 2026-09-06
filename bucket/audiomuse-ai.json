@@ -1,0 +1,28 @@
+{
+    "version": "3.5.2",
+    "description": "Self-hosted sonic analysis to rediscover songs and generate intelligent playlists for Navidrome, Jellyfin, LMS, Lyrion, Emby and Plex",
+    "homepage": "https://github.com/NeptuneHub/AudioMuse-AI",
+    "license": "AGPL-3.0-only",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/NeptuneHub/AudioMuse-AI/releases/download/v3.5.2/AudioMuse-AI-amd64-windows.zip",
+            "hash": "05d4d4a22a3a55489ad188e88569e37562c16150207f9da80beb45f0ba97ac04",
+            "extract_dir": "AudioMuse-AI"
+        }
+    },
+    "bin": "AudioMuse-AI.exe",
+    "notes": [
+        "Start the server with 'AudioMuse-AI.exe start' and stop it with 'AudioMuse-AI.exe stop'.",
+        "Once started, open the web UI at http://127.0.0.1:8000",
+        "Application data (database, temp audio) is stored in %LOCALAPPDATA%\\AudioMuse-AI.",
+        "Stop any running instance before running 'scoop update audiomuse-ai'."
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/NeptuneHub/AudioMuse-AI/releases/download/v$version/AudioMuse-AI-amd64-windows.zip"
+            }
+        }
+    }
+}
