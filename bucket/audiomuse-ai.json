@@ -12,7 +12,7 @@
     },
     "bin": "AudioMuse-AI.exe",
     "notes": [
-        "Start the server with 'AudioMuse-AI.exe start' and stop it with 'AudioMuse-AI.exe stop'.",
+        "Start the server with 'audiomuse-ai start' and stop it with 'audiomuse-ai stop'.",
         "Once started, open the web UI at http://127.0.0.1:8000",
         "Application data (database, temp audio) is stored in %LOCALAPPDATA%\\AudioMuse-AI.",
         "Stop any running instance before running 'scoop update audiomuse-ai'."
