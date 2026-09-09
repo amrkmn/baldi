@@ -12,7 +12,8 @@
     "bin": "vertd.exe",
     "checkver": {
         "script": [
-            "$release = Invoke-RestMethod 'https://api.github.com/repos/VERT-sh/vertd/releases/latest'",
+            "$h = $(if ($tok = Get-GitHubToken) { @{ Authorization = \"token $tok\" } } else { @{} })",
+            "$release = Invoke-RestMethod 'https://api.github.com/repos/VERT-sh/vertd/releases/latest' -Headers $h",
             "$tag = $release.tag_name",
             "$date = $release.published_at.ToString('yyyy.MM.dd')",
             "$sha = ($tag -replace 'nightly-', '').Substring(0,7)",
