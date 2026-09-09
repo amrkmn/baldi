@@ -1,13 +1,13 @@
 {
-    "version": "1.14.3",
+    "version": "1.14.4",
     "description": "Portable, lightweight, self-contained virtual machine",
     "homepage": "https://smolmachines.com/",
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/smol-machines/smolvm/releases/download/v1.14.3/smolvm-1.14.3-windows-x86_64.zip",
-            "hash": "e4cd445f7f7b6c664977b0f481f49f64da9f35ca147df9c2bdd83a8a74dcefd3",
-            "extract_dir": "smolvm-1.14.3-windows-x86_64"
+            "url": "https://github.com/smol-machines/smolvm/releases/download/v1.14.4/smolvm-1.14.4-windows-x86_64.zip",
+            "hash": "1971681d9bf6fe06f098b1dacb61fd34fdcabbf3c0b371a6d24ff800ce7191b9",
+            "extract_dir": "smolvm-1.14.4-windows-x86_64"
         }
     },
     "bin": "smolvm.exe",
