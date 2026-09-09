@@ -15,7 +15,8 @@
     ],
     "checkver": {
         "script": [
-            "$c = (Invoke-RestMethod 'https://api.github.com/repos/9001/copyparty/commits?path=bin/u2c.py&per_page=1')[0]",
+            "$h = $(if ($tok = Get-GitHubToken) { @{ Authorization = \"token $tok\" } } else { @{} })",
+            "$c = (Invoke-RestMethod 'https://api.github.com/repos/9001/copyparty/commits?path=bin/u2c.py&per_page=1' -Headers $h)[0]",
             "$date = $c.commit.author.date.ToString('yyyy.MM.dd')",
             "$sha = $c.sha.Substring(0,7)",
             "Write-Output \"$date.$sha|$($c.sha)\""
