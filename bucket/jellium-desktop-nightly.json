@@ -26,10 +26,10 @@
     ],
     "checkver": {
         "script": [
-            "$headers = @{ 'Accept' = 'application/vnd.github+json' }; if ($env:GITHUB_TOKEN) { $headers['Authorization'] = \"Bearer $env:GITHUB_TOKEN\" }",
-            "$r = Invoke-RestMethod 'https://api.github.com/repos/andrewrabert/jellium-desktop/actions/workflows/build-windows.yml/runs?per_page=1&status=completed&branch=main' -Headers $headers",
+            "$h = $(if ($tok = Get-GitHubToken) { @{ Authorization = \"token $tok\" } } else { @{} })",
+            "$r = Invoke-RestMethod 'https://api.github.com/repos/andrewrabert/jellium-desktop/actions/workflows/build-windows.yml/runs?per_page=1&status=completed&branch=main' -Headers $h",
             "$run = $r.workflow_runs[0]",
-            "$artifacts = Invoke-RestMethod $run.artifacts_url -Headers $headers",
+            "$artifacts = Invoke-RestMethod $run.artifacts_url -Headers $h",
             "$x64 = ($artifacts.artifacts | Where-Object { $_.name -eq 'windows-x64' }).id",
             "$arm64 = ($artifacts.artifacts | Where-Object { $_.name -eq 'windows-arm64' }).id",
             "Write-Output \"$($run.run_number)-$x64-$arm64\""
