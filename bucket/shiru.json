@@ -12,11 +12,7 @@
             "Shiru"
         ]
     ],
-    "checkver": {
-        "url": "https://github.com/RockinChaos/Shiru/releases/latest/download/latest.yml",
-        "regex": "version:\\s*([\\d.]+)",
-        "replace": "$1"
-    },
+    "checkver": "github",
     "autoupdate": {
         "url": "https://github.com/RockinChaos/Shiru/releases/download/v$version/win-Shiru-v$version-portable.exe#/Shiru.exe"
     }
