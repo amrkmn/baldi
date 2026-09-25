@@ -1,12 +1,12 @@
 {
-    "version": "2026.09.01.78d1050",
+    "version": "2026.09.25.24bff68",
     "description": "VERT's solution to crappy video conversion services.",
     "homepage": "https://github.com/VERT-sh/vertd",
     "license": "GPL-3.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/VERT-sh/vertd/releases/download/nightly-78d10506ed81d15374746042b7467e8e938c2a14/vertd-windows-x86_64.exe#/vertd.exe",
-            "hash": "da947a33fc6b2168815013d707c1c06f2dc49fbf376396e4ce9ac8f54895c075"
+            "url": "https://github.com/VERT-sh/vertd/releases/download/nightly-24bff68d59c03e24914624ad78f7cc125b4870db/vertd-windows-x86_64.exe#/vertd.exe",
+            "hash": "3bdd536a5ef5f07a0d84306f465b59b0161c98851446d6458369267e87717264"
         }
     },
     "bin": "vertd.exe",
