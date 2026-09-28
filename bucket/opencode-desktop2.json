@@ -1,0 +1,49 @@
+{
+    "version": "2.0.18",
+    "description": "The open source AI coding agent desktop application. (v2)",
+    "homepage": "https://opencode.ai/v2",
+    "license": "MIT",
+    "notes": [
+        "The v2 configuration is incompatible with v1.",
+        "See https://opencode.ai/v2/docs/migrate-v1/ for migration steps."
+    ],
+    "architecture": {
+        "64bit": {
+            "url": "https://opencode.ai/files/bin/2.0.18/opencode-desktop-win-x64.exe#/dl.7z",
+            "hash": "9a1c28bd9f08cc6ebe6b64a6c6164330a99c06293bf13668d507ff7526796912"
+        },
+        "arm64": {
+            "url": "https://opencode.ai/files/bin/2.0.18/opencode-desktop-win-arm64.exe#/dl.7z",
+            "hash": "bd51c68ad9b8bf6006c7c038c9090cf88275bdecb73c7199796877562c15c4ab"
+        }
+    },
+    "pre_install": [
+        "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-*.7z\" \"$dir\"",
+        "Remove-Item \"$dir\\`$*\", \"$dir\\Uninstall*\" -Force -Recurse -ErrorAction Ignore"
+    ],
+    "shortcuts": [
+        [
+            "OpenCode.exe",
+            "OpenCode 2"
+        ]
+    ],
+    "checkver": {
+        "url": "https://opencode.ai/update/api/latest/desktop/opencode",
+        "jsonpath": "$.version"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://opencode.ai/files/bin/$version/opencode-desktop-win-x64.exe#/dl.7z"
+            },
+            "arm64": {
+                "url": "https://opencode.ai/files/bin/$version/opencode-desktop-win-arm64.exe#/dl.7z"
+            }
+        },
+        "hash": {
+            "mode": "json",
+            "url": "https://opencode.ai/update/api/latest/desktop/opencode",
+            "jsonpath": "$.metadata.files['$basename'].sha256"
+        }
+    }
+}
