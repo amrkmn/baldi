@@ -9,15 +9,14 @@
     ],
     "architecture": {
         "64bit": {
-            "url": "https://registry.npmjs.org/@opencode/cli-windows-x64/-/cli-windows-x64-2.0.18.tgz",
-            "hash": "sha512:42cc865668c97077ae692f5b4d5bb88a237267361f9d19a26b4059a29f4027a41644f0d2ab5eda9355d1053186c21ea6b0cf84774cbe8647b7b3e953dff903f8"
+            "url": "https://opencode.ai/files/bin/2.0.18/opencode-windows-x64.zip",
+            "hash": "4c62e99f68520c614a0cfc29c6b82d228acbe006f13b85ab9cd3502566e2e492"
         },
         "arm64": {
-            "url": "https://registry.npmjs.org/@opencode/cli-windows-arm64/-/cli-windows-arm64-2.0.18.tgz",
-            "hash": "sha512:fee95f55040edc36a2b7a512328f6b21083aae320ad13d4d3284ca0a6935c0f6fa7a1d4f1d34afbcc0a6fe11d84dc149c875d6b06018a7f96900e36cf74a1ffa"
+            "url": "https://opencode.ai/files/bin/2.0.18/opencode-windows-arm64.zip",
+            "hash": "5e212b825031d64bf2dd8e3f5ca645b7496a07d8be2cc548a3c17fd25f4a8d39"
         }
     },
-    "extract_dir": "package\\bin",
     "bin": [
         "opencode.exe",
         [
@@ -26,25 +25,22 @@
         ]
     ],
     "checkver": {
-        "url": "https://registry.npmjs.org/@opencode%2fcli/latest",
+        "url": "https://opencode.ai/update/api/latest/cli/opencode",
         "jsonpath": "$.version"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://registry.npmjs.org/@opencode/cli-windows-x64/-/cli-windows-x64-$version.tgz",
-                "hash": {
-                    "url": "https://registry.npmjs.org/@opencode%2fcli-windows-x64/$version",
-                    "regex": "sha512-$base64"
-                }
+                "url": "https://opencode.ai/files/bin/$version/opencode-windows-x64.zip"
             },
             "arm64": {
-                "url": "https://registry.npmjs.org/@opencode/cli-windows-arm64/-/cli-windows-arm64-$version.tgz",
-                "hash": {
-                    "url": "https://registry.npmjs.org/@opencode%2fcli-windows-arm64/$version",
-                    "regex": "sha512-$base64"
-                }
+                "url": "https://opencode.ai/files/bin/$version/opencode-windows-arm64.zip"
             }
+        },
+        "hash": {
+            "mode": "json",
+            "url": "https://opencode.ai/update/api/latest/cli/opencode",
+            "jsonpath": "$.metadata.files['$basename'].sha256"
         }
     }
 }
