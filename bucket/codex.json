@@ -6,11 +6,11 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/openai/codex/releases/download/rust-v0.162.0/codex-package-x86_64-pc-windows-msvc.tar.zst",
-            "hash": "10450400524611cc28ffe1a0f1fb80c48e675c485a080cfb949592a719f04e42"
+            "hash": "d321dcba3430e2ea4306a7eb372e47e0bd128fc439ebf036b5515972e503410f"
         },
         "arm64": {
             "url": "https://github.com/openai/codex/releases/download/rust-v0.162.0/codex-package-aarch64-pc-windows-msvc.tar.zst",
-            "hash": "bf2bceff5e428c575e3b9c2b31eba61fde1b5bc03b19e03210e1a4e3d6e52e59"
+            "hash": "57f9267e25dc8ade13732db4f1320996607e72286563f635b72d3dace02e365e"
         }
     },
     "bin": [
