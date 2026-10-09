@@ -1,0 +1,29 @@
+{
+    "version": "0.1.18",
+    "description": "Local agent for Hoppscotch to make requests without CORS limitations.",
+    "homepage": "https://hoppscotch.io",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/hoppscotch/agent-releases/releases/download/v0.1.18/Hoppscotch_Agent_win_x64_portable.zip",
+            "hash": "e0a9362f20d2f0ea61164170ffa32defc7c97344016d6e8ca4a6eec2c7c54743"
+        }
+    },
+    "bin": "hoppscotch-agent.exe",
+    "shortcuts": [
+        [
+            "hoppscotch-agent.exe",
+            "Hoppscotch Agent"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/hoppscotch/agent-releases"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/hoppscotch/agent-releases/releases/download/v$version/Hoppscotch_Agent_win_x64_portable.zip"
+            }
+        }
+    }
+}
