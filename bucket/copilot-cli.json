@@ -3,8 +3,8 @@
     "description": "GitHub Copilot CLI brings the power of Copilot coding agent directly to your terminal",
     "homepage": "https://docs.github.com/en/copilot/concepts/agents/about-copilot-cli",
     "license": {
-        "identifier": "Proprietary",
-        "url": "https://docs.github.com/en/site-policy/github-terms/github-pre-release-license-terms"
+        "identifier": "GitHub Copilot CLI License",
+        "url": "https://github.com/github/copilot-cli/blob/main/LICENSE.md"
     },
     "architecture": {
         "64bit": {
