@@ -2,7 +2,10 @@
     "version": "0.98.0",
     "description": "The glamourous AI coding agent for your favourite terminal",
     "homepage": "https://charm.sh/crush",
-    "license": "FSL-1.1-MIT",
+    "license": {
+        "identifier": "FSL-1.1-MIT",
+        "url": "https://github.com/charmbracelet/crush/blob/main/LICENSE.md"
+    },
     "architecture": {
         "64bit": {
             "url": "https://github.com/charmbracelet/crush/releases/download/v0.98.0/crush_0.98.0_Windows_x86_64.zip",
