@@ -1,0 +1,32 @@
+{
+    "version": "1.12.1",
+    "description": "CLI application for publishing sites to git-pages",
+    "homepage": "https://codeberg.org/git-pages/git-pages-cli",
+    "license": "0BSD",
+    "architecture": {
+        "64bit": {
+            "url": "https://codeberg.org/git-pages/git-pages-cli/releases/download/v1.12.1/git-pages-cli.windows-amd64.exe#/git-pages-cli.exe",
+            "hash": "1ef2077c867612ea4e1ad6af307415bead27bd2c54939f3176d3224d1f9e05d5"
+        },
+        "arm64": {
+            "url": "https://codeberg.org/git-pages/git-pages-cli/releases/download/v1.12.1/git-pages-cli.windows-arm64.exe#/git-pages-cli.exe",
+            "hash": "bd913a41fdd3048929a0f25208c7209b7fa2523788a5c77fc503fbaa1b9d6cb3"
+        }
+    },
+    "bin": "git-pages-cli.exe",
+    "checkver": {
+        "url": "https://codeberg.org/api/v1/repos/git-pages/git-pages-cli/releases/latest",
+        "jsonpath": "$.tag_name",
+        "regex": "v?([\\d.]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://codeberg.org/git-pages/git-pages-cli/releases/download/v$version/git-pages-cli.windows-amd64.exe#/git-pages-cli.exe"
+            },
+            "arm64": {
+                "url": "https://codeberg.org/git-pages/git-pages-cli/releases/download/v$version/git-pages-cli.windows-arm64.exe#/git-pages-cli.exe"
+            }
+        }
+    }
+}
