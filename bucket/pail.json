@@ -1,0 +1,100 @@
+{
+    "version": "0.5.1",
+    "description": "Cross-platform desktop manager for S3-compatible object storage",
+    "homepage": "https://pail.download",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/DejavuMoe/Pail/releases/download/v0.5.1/Pail-v0.5.1-windows-amd64.zip",
+            "hash": "0bc7d1410a10bb6dc060c24d0e77e368ddc2e21d48d7c342a207068b91933162",
+            "extract_dir": "Pail-v0.5.1-windows-amd64",
+            "bin": [
+                [
+                    "pail-v0.5.1-windows-amd64.exe",
+                    "pail"
+                ],
+                [
+                    "pail-desktop-v0.5.1-windows-amd64.exe",
+                    "pail-desktop"
+                ]
+            ],
+            "shortcuts": [
+                [
+                    "pail-desktop-v0.5.1-windows-amd64.exe",
+                    "Pail"
+                ]
+            ]
+        },
+        "arm64": {
+            "url": "https://github.com/DejavuMoe/Pail/releases/download/v0.5.1/Pail-v0.5.1-windows-arm64.zip",
+            "hash": "72ceb30c3ff9638a3f6c622872b0e5f67b72eb9262b1433b0b3e4f01efbcf6b4",
+            "extract_dir": "Pail-v0.5.1-windows-arm64",
+            "bin": [
+                [
+                    "pail-v0.5.1-windows-arm64.exe",
+                    "pail"
+                ],
+                [
+                    "pail-desktop-v0.5.1-windows-arm64.exe",
+                    "pail-desktop"
+                ]
+            ],
+            "shortcuts": [
+                [
+                    "pail-desktop-v0.5.1-windows-arm64.exe",
+                    "Pail"
+                ]
+            ]
+        }
+    },
+    "checkver": {
+        "github": "https://github.com/DejavuMoe/Pail"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/DejavuMoe/Pail/releases/download/v$version/Pail-v$version-windows-amd64.zip",
+                "extract_dir": "Pail-v$version-windows-amd64",
+                "bin": [
+                    [
+                        "pail-v$version-windows-amd64.exe",
+                        "pail"
+                    ],
+                    [
+                        "pail-desktop-v$version-windows-amd64.exe",
+                        "pail-desktop"
+                    ]
+                ],
+                "shortcuts": [
+                    [
+                        "pail-desktop-v$version-windows-amd64.exe",
+                        "Pail"
+                    ]
+                ]
+            },
+            "arm64": {
+                "url": "https://github.com/DejavuMoe/Pail/releases/download/v$version/Pail-v$version-windows-arm64.zip",
+                "extract_dir": "Pail-v$version-windows-arm64",
+                "bin": [
+                    [
+                        "pail-v$version-windows-arm64.exe",
+                        "pail"
+                    ],
+                    [
+                        "pail-desktop-v$version-windows-arm64.exe",
+                        "pail-desktop"
+                    ]
+                ],
+                "shortcuts": [
+                    [
+                        "pail-desktop-v$version-windows-arm64.exe",
+                        "Pail"
+                    ]
+                ]
+            }
+        },
+        "hash": {
+            "url": "$baseurl/SHA256SUMS"
+        }
+    }
+}
