@@ -1,12 +1,12 @@
 {
-    "version": "0.6.0",
+    "version": "0.7.0",
     "description": "Official CLI for Avrea",
     "homepage": "https://github.com/avrea-com/cli",
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/avrea-com/cli/releases/download/v0.6.0/avr_0.6.0_windows_amd64.zip",
-            "hash": "6763f604db6357a1792fee6e9a624520a28a81e52cdd38f912fdbdf0c13bb831"
+            "url": "https://github.com/avrea-com/cli/releases/download/v0.7.0/avr_0.7.0_windows_amd64.zip",
+            "hash": "a6f82ecdf0353835be818632a8d26c94bceab839d09d66da0aba52547ec8efd0"
         }
     },
     "bin": "avr.exe",
