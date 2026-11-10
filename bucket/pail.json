@@ -1,47 +1,47 @@
 {
-    "version": "0.5.3",
+    "version": "0.6.0",
     "description": "Cross-platform desktop manager for S3-compatible object storage",
     "homepage": "https://pail.download",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/DejavuMoe/Pail/releases/download/v0.5.3/Pail-v0.5.3-windows-amd64.zip",
-            "hash": "559eb3db548b9d9bebc761a0b6ed3436aed1543583c00182ed8633ef5c059630",
-            "extract_dir": "Pail-v0.5.3-windows-amd64",
+            "url": "https://github.com/DejavuMoe/Pail/releases/download/v0.6.0/Pail-v0.6.0-windows-amd64.zip",
+            "hash": "6ec0d5c7b57c992453c02a2220b328f247b84dccb9565fea2d2a8c97efce3c7c",
+            "extract_dir": "Pail-v0.6.0-windows-amd64",
             "bin": [
                 [
-                    "pail-v0.5.3-windows-amd64.exe",
+                    "pail-v0.6.0-windows-amd64.exe",
                     "pail"
                 ],
                 [
-                    "pail-desktop-v0.5.3-windows-amd64.exe",
+                    "pail-desktop-v0.6.0-windows-amd64.exe",
                     "pail-desktop"
                 ]
             ],
             "shortcuts": [
                 [
-                    "pail-desktop-v0.5.3-windows-amd64.exe",
+                    "pail-desktop-v0.6.0-windows-amd64.exe",
                     "Pail"
                 ]
             ]
         },
         "arm64": {
-            "url": "https://github.com/DejavuMoe/Pail/releases/download/v0.5.3/Pail-v0.5.3-windows-arm64.zip",
-            "hash": "2b1a1635cacfeb08e031f35d69703be8f2c056d14e8b4a890bf8d48f8916dac8",
-            "extract_dir": "Pail-v0.5.3-windows-arm64",
+            "url": "https://github.com/DejavuMoe/Pail/releases/download/v0.6.0/Pail-v0.6.0-windows-arm64.zip",
+            "hash": "88c99bd494415976dea6b6b8ea8a9c193469cfd820280aa0eb54425f2cb03755",
+            "extract_dir": "Pail-v0.6.0-windows-arm64",
             "bin": [
                 [
-                    "pail-v0.5.3-windows-arm64.exe",
+                    "pail-v0.6.0-windows-arm64.exe",
                     "pail"
                 ],
                 [
-                    "pail-desktop-v0.5.3-windows-arm64.exe",
+                    "pail-desktop-v0.6.0-windows-arm64.exe",
                     "pail-desktop"
                 ]
             ],
             "shortcuts": [
                 [
-                    "pail-desktop-v0.5.3-windows-arm64.exe",
+                    "pail-desktop-v0.6.0-windows-arm64.exe",
                     "Pail"
                 ]
             ]
