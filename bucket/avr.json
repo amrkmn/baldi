@@ -6,7 +6,8 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/avrea-com/cli/releases/download/v0.7.0/avr_0.7.0_windows_amd64.zip",
-            "hash": "a6f82ecdf0353835be818632a8d26c94bceab839d09d66da0aba52547ec8efd0"
+            "hash": "a6f82ecdf0353835be818632a8d26c94bceab839d09d66da0aba52547ec8efd0",
+            "extract_dir": "avr_0.7.0_windows_amd64"
         }
     },
     "bin": "avr.exe",
@@ -14,7 +15,8 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/avrea-com/cli/releases/download/v$version/avr_$version_windows_amd64.zip"
+                "url": "https://github.com/avrea-com/cli/releases/download/v$version/avr_$version_windows_amd64.zip",
+                "extract_dir": "avr_$version_windows_amd64"
             }
         }
     }
