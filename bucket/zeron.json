@@ -1,0 +1,33 @@
+{
+    "version": "0.3.2",
+    "description": "A native control plane for Claude Code, Codex, Cursor, Devin and other coding agents",
+    "homepage": "https://zeron.sh/",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/zeronsh/zeron/releases/download/v0.3.2/zeron-0.3.2-windows-x86_64.zip",
+            "hash": "4bf973bff4ffc1f291ea5a400c72d48cee6b98f5eb2b6084a2b139a447be0269"
+        }
+    },
+    "bin": "zeron.exe",
+    "shortcuts": [
+        [
+            "zeron.exe",
+            "Zeron"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/zeronsh/zeron"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/zeronsh/zeron/releases/download/v$version/zeron-$version-windows-x86_64.zip"
+            }
+        },
+        "hash": {
+            "url": "$baseurl/manifest.json",
+            "jsonpath": "$.files['$basename'].sha256"
+        }
+    }
+}
