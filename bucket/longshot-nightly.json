@@ -1,0 +1,33 @@
+{
+    "version": "132-5e072fc8",
+    "description": "A supported console game, running natively on Windows and Linux with no emulator, built from your own copy of the game. Continuation of Hookshot (Nightly)",
+    "homepage": "https://longshot.magicbean.dev/",
+    "license": "GPL-3.0-or-later",
+    "architecture": {
+        "64bit": {
+            "url": "https://git.magicbean.dev/MagicBeanDev/Longshot/releases/download/nightly-132-5e072fc8/LongshotBuilder-nightly-132-5e072fc8-windows-x64.zip",
+            "hash": "619811381d3381d94b0ba790e39272c48e05794b4c766f72ebed0ac83173d473"
+        }
+    },
+    "bin": "LongshotBuilder.exe",
+    "shortcuts": [
+        [
+            "LongshotBuilder.exe",
+            "Longshot Builder (Nightly)"
+        ]
+    ],
+    "checkver": {
+        "url": "https://git.magicbean.dev/api/v1/repos/MagicBeanDev/Longshot/releases",
+        "regex": "nightly-([\\d]+-[a-f0-9]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://git.magicbean.dev/MagicBeanDev/Longshot/releases/download/nightly-$version/LongshotBuilder-nightly-$version-windows-x64.zip"
+            }
+        },
+        "hash": {
+            "url": "$baseurl/SHA256SUMS"
+        }
+    }
+}

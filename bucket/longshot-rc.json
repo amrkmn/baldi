@@ -1,0 +1,33 @@
+{
+    "version": "3.0.0-rc.3",
+    "description": "A supported console game, running natively on Windows and Linux with no emulator, built from your own copy of the game. Continuation of Hookshot (Release Candidate)",
+    "homepage": "https://longshot.magicbean.dev/",
+    "license": "GPL-3.0-or-later",
+    "architecture": {
+        "64bit": {
+            "url": "https://git.magicbean.dev/MagicBeanDev/Longshot/releases/download/v3.0.0-rc.3/LongshotBuilder-v3.0.0-rc.3-windows-x64.zip",
+            "hash": "4dbe387fbd33a8d676af7fd9f7e0a531c0380e10d33aab18cce81064f766bbed"
+        }
+    },
+    "bin": "LongshotBuilder.exe",
+    "shortcuts": [
+        [
+            "LongshotBuilder.exe",
+            "Longshot Builder"
+        ]
+    ],
+    "checkver": {
+        "url": "https://git.magicbean.dev/api/v1/repos/MagicBeanDev/Longshot/releases",
+        "regex": "v([\\d.]+-rc[.\\d]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://git.magicbean.dev/MagicBeanDev/Longshot/releases/download/v$version/LongshotBuilder-v$version-windows-x64.zip"
+            }
+        },
+        "hash": {
+            "url": "$baseurl/SHA256SUMS"
+        }
+    }
+}
