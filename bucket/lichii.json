@@ -1,0 +1,35 @@
+{
+    "version": "366",
+    "description": "Experimental Nintendo Switch and Switch 2 emulator",
+    "homepage": "https://github.com/zortos293/Lichii",
+    "license": "GPL-3.0-or-later",
+    "notes": "Lichii requires Nintendo Switch/Switch 2 firmware and system keys (prod.keys) dumped from your console.",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/zortos293/Lichii/releases/download/build-366/lichii-windows-x86_64-pgo.zip",
+            "hash": "41ad849ce1c763fcae601cd47ef7b05bef9a73fc20fda54cfbcf83ceaa2aedb3"
+        }
+    },
+    "bin": [
+        "lichii.exe",
+        "eden-cli.exe"
+    ],
+    "shortcuts": [
+        [
+            "lichii.exe",
+            "Lichii"
+        ]
+    ],
+    "persist": "user",
+    "checkver": {
+        "github": "https://github.com/zortos293/Lichii",
+        "regex": "build-(\\d+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/zortos293/Lichii/releases/download/build-$version/lichii-windows-x86_64-pgo.zip"
+            }
+        }
+    }
+}
