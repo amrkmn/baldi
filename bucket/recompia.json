@@ -10,6 +10,13 @@
             "extract_dir": "Recompia-0.16.0"
         }
     },
+    "pre_install": [
+        "'controls.ini', 'pkp.ini' | ForEach-Object {",
+        "    if (!(Test-Path \"$persist_dir\\$_\")) {",
+        "        New-Item -Path \"$dir\\$_\" -ItemType File -Force | Out-Null",
+        "    }",
+        "}"
+    ],
     "shortcuts": [
         [
             "Recompia.exe",
@@ -18,7 +25,11 @@
     ],
     "persist": [
         "save",
-        "shader_cache"
+        "shader_cache",
+        "nup_dump",
+        "pokohex_data",
+        "controls.ini",
+        "pkp.ini"
     ],
     "checkver": {
         "github": "https://github.com/Dittobyte/Recompia"
