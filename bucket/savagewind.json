@@ -1,0 +1,58 @@
+{
+    "version": "0.6.0-alpha.6",
+    "description": "Static recompilation of The Legend of Zelda: Breath of the Wild (Switch, v1.9.0) for Windows",
+    "homepage": "https://github.com/Revivedx/SavageWindRecomp",
+    "license": "MIT",
+    "notes": "Follow setup instructions in the game or config app. Game files (v1.9.0) dumped from your own Nintendo Switch are required.",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/Revivedx/SavageWindRecomp/releases/download/v0.6.0-alpha.6/SavageWind-0.6.0-alpha.6-windows.zip",
+            "hash": "9bfc05217ed7e69001e02dee7ae9a6070a23b68cfbf946f23727f0767d4c28f8",
+            "extract_dir": "Savage Wind"
+        }
+    },
+    "pre_install": [
+        "if (!(Test-Path \"$persist_dir\\savagewind.ini\")) {",
+        "    New-Item -Path \"$dir\\savagewind.ini\" -ItemType File -Force | Out-Null",
+        "}"
+    ],
+    "bin": [
+        "savagewind.exe",
+        [
+            "Savage Wind Configuration.exe",
+            "savagewind-config"
+        ]
+    ],
+    "shortcuts": [
+        [
+            "savagewind.exe",
+            "Savage Wind"
+        ],
+        [
+            "Savage Wind Configuration.exe",
+            "Savage Wind Configuration"
+        ]
+    ],
+    "persist": [
+        "extracted",
+        "save",
+        "savagewind.ini"
+    ],
+    "checkver": {
+        "url": "https://api.github.com/repos/Revivedx/SavageWindRecomp/releases",
+        "jsonpath": "$[0].tag_name",
+        "regex": "v?([\\d.]+(?:-[\\w.]+)?)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/Revivedx/SavageWindRecomp/releases/download/v$version/SavageWind-$version-windows.zip",
+                "extract_dir": "Savage Wind"
+            }
+        },
+        "hash": {
+            "url": "https://api.github.com/repos/Revivedx/SavageWindRecomp/releases/tags/v$version",
+            "regex": "$sha256\\s+$basename"
+        }
+    }
+}
