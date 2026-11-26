@@ -1,13 +1,13 @@
 {
-    "version": "0.17.6",
+    "version": "0.17.7",
     "description": "Cozy life-simulation and sandbox builder with fantastical creatures, recompiled to run natively",
     "homepage": "https://www.recompia.com",
     "license": "GPL-3.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Dittobyte/Recompia/releases/download/v0.17.6/Recompia-0.17.6-windows-x64.zip",
-            "hash": "3d8f681f159edff9575c9747dc911e574d29540098dbb6ce098ae215e32e7d8f",
-            "extract_dir": "Recompia-0.17.6"
+            "url": "https://github.com/Dittobyte/Recompia/releases/download/v0.17.7/Recompia-0.17.7-windows-x64.zip",
+            "hash": "2a844bf882b428f73c5d930c84d158f3f22ec6326ccfffff83520944da595009",
+            "extract_dir": "Recompia-0.17.7"
         }
     },
     "pre_install": [
